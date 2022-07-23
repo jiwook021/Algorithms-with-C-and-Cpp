@@ -4,12 +4,13 @@ CFLAGS  = -g -Wall
 Target1 = AVLRebalance
 Target2 = Binary_Search_Tree
 Target3 = Binary_Tree
+Language = cpp
 
 main: main.o $(Target1).o $(Target2).o $(Target3).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o $(Target2).o $(Target3).o
  
-main.o: main.cpp $(Target1).h $(Target2).h $(Target3).h
-	$(CC) $(CFLAGS) -c main.cpp
+main.o: main.$(Language) $(Target1).h $(Target2).h $(Target3).h
+	$(CC) $(CFLAGS) -c main.$(Language)
  
 $(Target1).o: $(Target1).h $(Target2).h $(Target3).h
 $(Target2).o: $(Target2).h $(Target2).h
@@ -19,4 +20,4 @@ clean:
 	$(RM) $(Target)
 	$(RM) $(Target2)
 	$(RM) $(Target3)
-	$(RM) $(main)
+	$(RM) main
