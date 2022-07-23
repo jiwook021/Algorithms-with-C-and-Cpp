@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\jiwoo\Desktop\C++_DataStructure_and_Algorithm\DisJointSet\DisJointSet\main.c(5,22): warning C4033: 'getParent' must return a value
+C:\Users\jiwoo\Desktop\C++_DataStructure_and_Algorithm\DisJointSet\DisJointSet\main.c(7): warning C4715: 'getParent': not all control paths return a value
+  DisJointSet.vcxproj -> C:\Users\jiwoo\Desktop\C++_DataStructure_and_Algorithm\DisJointSet\Debug\DisJointSet.exe

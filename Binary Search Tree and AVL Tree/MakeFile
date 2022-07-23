@@ -1,0 +1,22 @@
+CC = g++
+CFLAGS  = -g -Wall
+
+Target1 = AVLRebalance
+Target2 = Binary_Search_Tree
+Target3 = Binary_Tree
+
+main: main.o $(Target1).o $(Target2).o $(Target3).o 
+	$(CC) $(CFLAGS) -o main main.o $(Target1).o $(Target2).o $(Target3).o
+ 
+main.o: main.cpp $(Target1).h $(Target2).h $(Target3).h
+	$(CC) $(CFLAGS) -c main.cpp
+ 
+$(Target1).o: $(Target1).h $(Target2).h $(Target3).h
+$(Target2).o: $(Target2).h $(Target2).h
+$(Target3).o: $(Target3).h
+  
+clean:
+	$(RM) $(Target)
+	$(RM) $(Target2)
+	$(RM) $(Target3)
+	$(RM) $(main)
