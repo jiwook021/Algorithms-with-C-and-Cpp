@@ -8,290 +8,326 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# ����ũ ����Ÿ���̽�, Sat Jul 23 11:54:06 2022
-�� ǥ��
-# ����
+# Make data base, printed on Sat Jul 23 11:58:29 2022
 
-# �ڵ�
+# Variables
+
+# automatic
 <D = $(patsubst %/,%,$(dir $<))
-# �ڵ�
+# automatic
 ?F = $(notdir $?)
-# ����ũ����
+# makefile
 MAKEFLAGS = Rrqp
-# ȯ��
-VSCODE_LOG_NATIVE = false
-# �ڵ�
+# automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# �ڵ�
+# automatic
 @D = $(patsubst %/,%,$(dir $@))
-# ȯ��
+# environment
 HOMEDRIVE = C:
-# �ڵ�
+# automatic
 @F = $(notdir $@)
-# �ڵ�
+# automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# ����ũ����
-CURDIR := g:/�� ����̺�/Data_Structure-Algorithm_with_C
-# �⺻��
+# makefile
+CURDIR := g:/My Drive/Data_Structure-Algorithm_with_C
+# default
 SHELL := sh.exe
-# ȯ��
+# environment
 WINDIR = C:\WINDOWS
-# ȯ��
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"26f3b44ea4f1e942cca002e9545643cc.ko","_translationsConfigFile":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\26f3b44ea4f1e942cca002e9545643cc.ko\\tcf.json","_cacheRoot":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\26f3b44ea4f1e942cca002e9545643cc.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\26f3b44ea4f1e942cca002e9545643cc.ko\\30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\26f3b44ea4f1e942cca002e9545643cc.ko\\corrupted.info","_languagePackSupport":true}
-# ȯ��
+# environment
+VSCODE_NLS_ 
+CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
 ONEDRIVE = C:\Users\jiwoo\OneDrive
-# ȯ��
-XILINXD_LICENSE_FILE = \\192.168.0.111\Vivado_License\Xilinx.lic;2100@192.168.0.111;2100@DESKTOP=DOMGSRH;
-# ȯ��
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# ����ũ����
-MAKEFILE_LIST := 
-# ȯ��
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# ȯ��
-TMP = C:\Users\jiwoo\AppData\Local\Temp
-# ȯ��
-VSCODE_VERBOSE_LOGGING = true
-# ȯ��
-PROGRAMW6432 = C:\Program Files
-# ȯ��
-PROGRAMDATA = C:\ProgramData
-# ȯ��
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-976464f3-f9b0-455f-a545-80c82ca0e826-sock
-# ȯ��
-VSCODE_CWD = C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code
-# ȯ��
-PATH = D:\Programs\vmware\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Python34;C:\mingw\bin;C:\msys64\mingw32\bin;C:\Program Files\CMake\bin;C:\Program 
-make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
-
- Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Bandizip\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;
-# ȯ��
-LM_LICENSE_FILE = \\192.168.0.111\Vivado_License\Xilinx.lic;\2100@DESKTOP=DOMGSRH;2100@192.168.0.111;
-# ȯ��
-COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# ȯ��
-ZES_ENABLE_SYSMAN = 1
-# ȯ��
-PROCESSOR_ARCHITECTURE = x86
-# ȯ��
-USERPROFILE = C:\Users\jiwoo
-# ȯ��
-ALLUSERSPROFILE = C:\ProgramData
-# ȯ��
-VSCODE_LOG_STACK = false
-# ȯ��
-NUMBER_OF_PROCESSORS = 12
-# ȯ��
-ELECTRON_RUN_AS_NODE = 1
-# �⺻��
-.FEATURES := target-specific order-only second-expansion else-if archives
-# �ڵ�
-%F = $(notdir $%)
-# ȯ��
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12092_ZGCRHGFTKVYSBFDE
-# ȯ��
-VSCODE_PIPE_LOGGING = true
-# ȯ��
-COMPUTERNAME = DESKTOP-9NPK4EB
-# ȯ��
-PROGRAMFILES = C:\Program Files (x86)
-# ȯ��
-DRIVERDATA = C:\Windows\System32\Drivers\DriverData
-# ȯ��
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# ȯ��
-USERNAME = jiwoo
-# ȯ��
+# environment
 PUBLIC = C:\Users\Public
-# ȯ��
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# ȯ��
-VSCODE_CODE_CACHE_PATH = C:\Users\jiwoo\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
-# ȯ��
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# ȯ��
-COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
-# ȯ��
-LOGONSERVER = \\DESKTOP-9NPK4EB
-# ȯ��
-ONEDRIVECONSUMER = C:\Users\jiwoo\OneDrive
-# ȯ��
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# ȯ��
-USERDOMAIN = DESKTOP-9NPK4EB
-# �⺻��
-MAKE = $(MAKE_COMMAND)
-# �⺻��
-MAKECMDGOALS := all
-# �⺻��
-MAKE_VERSION := 3.81
-# ����ũ����
-.DEFAULT_GOAL := 
-# ȯ��
-PROGRAMFILES(X86) = C:\Program Files (x86)
-# �ڵ�
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile
+MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\jiwoo\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+CDS_LISTENER_MODE = LOCAL
+# environment
+VSCODE_CWD = C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code
+# environment
+OPENCV_DIR = C:\OpenCV
+# environment
+CDS_LIC_ONLY = 1
+# environment
+PATH = C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\;C:\Program Files\MATLAB\R2020b\runtime\win64;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\MinGW\bin;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\OpenCV\build\x64\vc15\bin;C:\Program Files\Bandizip\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;C:\Users\jiwoo\.dotnet\tools;C:\Python34\Scripts;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\OpenCV\x64\vc16\bin;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\.dotnet\tools
+# environment
+SW_SIM_HYDRA = C:\Program Files\Common Files\SolidWorks Shared\Simulation Worker Agent\
+# environment
+ONLINESERVICES = Online Services
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132483015751815535
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# automatic
 %D = $(patsubst %/,%,$(dir $%))
-# ȯ��
+# environment
+USERPROFILE = C:\Users\jiwoo
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# environment
+NRFGOSTUDIOPATH = C:\Program Files (x86)\Nordic Semiconductor\nRFgo Studio
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27660_UPVPNNHNLDQHJFSV
+# environment
+COMPUTERNAME = DESKTOP-SFJ547R
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = jiwoo
+# environment
+KMP_DUPLICATE_LIB_OK = TRUE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = C:\SPB_DATA
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\jiwoo\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-SFJ547R
+# environment
+CDS_LIC_FILE = C:\Cadence\SPB_17.4\License.dat
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-SFJ547R
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := 
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+FFMPEG = C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg
+# environment
 LOCALAPPDATA = C:\Users\jiwoo\AppData\Local
-# ȯ��
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
-# �⺻��
+# environment
+PSMODULEPATH = %ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
 MAKE_COMMAND := make.exe
-# ȯ��
+# environment
 PROCESSOR_ARCHITEW6432 = AMD64
-# �⺻��
+# default
 .VARIABLES := 
-# �ڵ�
+# environment
+PROGRAMDATA = C:\ProgramData
+# automatic
 *F = $(notdir $*)
-# ȯ��
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
-# ȯ��
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+# environment
 OS = Windows_NT
-# ȯ��
-VSCODE_IPC_HOOK = \\.\pipe\62f130cc4ea086a017a8edfe7070e9c2-1.68.1-main-sock
-# ȯ��
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\62f130cc4ea086a017a8edfe7070e9c2-1.69.2-main-sock
+# environment
 HOMEPATH = \Users\jiwoo
-# ȯ��
+# environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
-# ȯ��
+# environment
 PROMPT = $P$G
-# ȯ��
+# environment
 MFLAGS = -Rrqp
-# �ڵ�
+# automatic
 *D = $(patsubst %/,%,$(dir $*))
-# ȯ��
+# environment
+REGIONCODE = NA
+# environment
 SYSTEMROOT = C:\WINDOWS
-# �ڵ�
+# automatic
 +D = $(patsubst %/,%,$(dir $+))
-# �ڵ�
+# environment
+PLATFORMCODE = KV
+# automatic
 +F = $(notdir $+)
-# ȯ��
+# environment
 APPDATA = C:\Users\jiwoo\AppData\Roaming
-# ȯ��
+# environment
 TEMP = C:\Users\jiwoo\AppData\Local\Temp
-# ȯ��
+# environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
-# �⺻��
+# default
 MAKEFILES := 
-# �ڵ�
+# automatic
 <F = $(notdir $<)
-# ȯ��
+# environment
+VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
+# environment
+MKL_SERIAL = YES
+# environment
 LC_ALL = C
-# �ڵ�
+# environment
+SW_SIM_TEMP = C:\ProgramData\SOLIDWORKS\SW_net_sim_temp\
+# automatic
 ^F = $(notdir $^)
-# �⺻��
+# default
 SUFFIXES := 
-# ȯ��
+# environment
 SYSTEMDRIVE = C:
-# ȯ��
-SESSIONNAME = Console
-# ȯ��
-PROCESSOR_REVISION = 9e0a
-# ȯ��
+# environment
+PROCESSOR_REVISION = 8e0c
+# environment
+SW_SIM_MPIT = INTELMPI
+# environment
 MAKELEVEL := 0
-# ȯ��
+# environment
 LANG = C
-# ȯ��
+# environment
 PROCESSOR_LEVEL = 6
-# ȯ��
+# environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# ȯ��
-VSCODE_PID = 12092
-# ȯ��
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
+# environment
+VSCODE_PID = 27660
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-SFJ547R
 # variable set hash-table stats:
-# Load=92/1024=9%, Rehash=0, Collisions=9/109=8%
+# Load=101/1024=10%, Rehash=0, Collisions=12/118=10%
 
 # Pattern-specific Variable Values
 
-# ������ ���� ���� ������ �����ϴ�.
+# No pattern-specific variable values.
 
-# ���丮
+# Directories
 
-# C:\Program Files\Bandizip\ (Ű C:/Program Files/Bandizip/, ����ð� 1653043852): 20 ����, 0�� �Ұ���.
-# C:\Program Files\Docker\Docker\resources\bin (Ű C:/Program Files/Docker/Docker/resources/bin, ����ð� 1654161131): 13 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (Ű C:/WINDOWS/System32/WindowsPowerShell/v1.0/, ����ð� 1643358952): 31 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\Wbem (Ű C:/WINDOWS/System32/Wbem, ����ð� 1658066664): 170 ����, 0�� �Ұ���.
-# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1658540161): 31 ����, 0�� �Ұ���.
-# C:\msys64\mingw32\bin (Ű C:/msys64/mingw32/bin, ����ð� 1644198235): 2 ����, 0�� �Ұ���.
-# C:\Program Files\TortoiseSVN\bin (Ű C:/Program Files/TortoiseSVN/bin, ����ð� 1645672799): 64 ����, 0�� �Ұ���.
-# C:\mingw\bin (Ű C:/mingw/bin, ����ð� 1643335684): 73 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\OpenSSH\: stat�� �� �� �������ϴ�.
-# C:\Program Files\PuTTY\ (Ű C:/Program Files/PuTTY/, ����ð� 1642485510): 12 ����, 0�� �Ұ���.
-# D:\Programs\vmware\bin\ (Ű D:/Programs/vmware/bin/, ����ð� 1652927609): 4 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin (Ű C:/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code/bin, ����ð� 1655431216): 4 ����, 0�� �Ұ���.
-# C:\WINDOWS (Ű C:/WINDOWS, ����ð� 1658066663): 114 ����, 0�� �Ұ���.
-# C:\Python34: stat�� �� �� �������ϴ�.
-# C:\ProgramData\DockerDesktop\version-bin: stat�� �� �� �������ϴ�.
-# C:\Program Files\Git\cmd (Ű C:/Program Files/Git/cmd, ����ð� 1644199690): 8 ����, 0�� �Ұ���.
-# C:\WINDOWS\system32 (Ű C:/WINDOWS/system32, ����ð� 1658125068): 2949 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin (Ű C:/Users/jiwoo/AppData/Local/GitHubDesktop/bin, ����ð� 1642487105): 4 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps (Ű C:/Users/jiwoo/AppData/Local/Microsoft/WindowsApps, ����ð� 1652875691): 30 ����, 0�� �Ұ���.
-# C:\Program Files\CMake\bin (Ű C:/Program Files/CMake/bin, ����ð� 1644199504): 7 ����, 0�� �Ұ���.
-# C:\Program Files (x86)\GnuWin32\bin (Ű C:/Program Files (x86)/GnuWin32/bin, ����ð� 1644564198): 5 ����, 0�� �Ұ���.
+# C:\Program Files\Bandizip\ (key C:/Program Files/Bandizip/, mtime 1645869432): 20 files, no impossibilities.
+# C:\Python34\Scripts: could not be stat'd.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1644685351): 32 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1652566390): 155 files, no impossibilities.
+# . (key g:/My Drive/Data_Structure-Algorithm_with_C, mtime 1658541617): 31 files, no impossibilities.
+# C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\ (key C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/, mtime 1605101025): 73 files, no impossibilities.
+# C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility (key C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility, mtime 1583957634): 12 files, no impossibilities.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1605101239): 5 files, no impossibilities.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1603828005): 15 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1644574931): 10 files, no impossibilities.
+# C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin (key C:/Program Files/Eclipse Adoptium/jdk-17.0.1.12-hotspot/bin, mtime 1636611009): 122 files, no impossibilities.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1641055287): 63 files, no impossibilities.
+# C:\Program Files\MATLAB\R2020b\bin (key C:/Program Files/MATLAB/R2020b/bin, mtime 1601321764): 16 files, no impossibilities.
+# C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg\bin: could not be stat'd.
+# C:\Program Files (x86)\VMware\VMware Workstation\bin\ (key C:/Program Files (x86)/VMware/VMware Workstation/bin/, mtime 1650970506): 4 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1582770694): 12 files, no impossibilities. 
+make.exe: *** No rule to make target `all'.  Stop.
 
-# 3541 ����, 0�� impossibilities in 21 directories.
+
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1629263057): 5 files, no impossibilities.
+# C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658540032): 4 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1601419771): 4 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1657658733): 145 files, no impossibilities.
+# C:\ProgramData\Oracle\Java\javapath (key C:/ProgramData/Oracle/Java/javapath, mtime 1601291843): 5 files, no impossibilities.
+# C:\OpenCV\x64\vc16\bin (key C:/OpenCV/x64/vc16/bin, mtime 1626987837): 113 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1601419778): 7 files, no impossibilities.
+# C:\Users\jiwoo\.dotnet\tools: could not be stat'd.
+# C:\Program Files\MiKTeX 2.9\miktex\bin\x64\ (key C:/Program Files/MiKTeX 2.9/miktex/bin/x64/, mtime 1583464099): 661 files, no impossibilities.
+# C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\ (key C:/Program Files (x86)/Nordic Semiconductor/nrf5x/bin/, mtime 1584104923): 12 files, no impossibilities.
+# C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1645328171): 207 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1583973093): 8 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1657944539): 3177 files, no impossibilities.
+# C:\Program Files\MATLAB\R2020b\runtime\win64 (key C:/Program Files/MATLAB/R2020b/runtime/win64, mtime 1601321897): 10 files, no impossibilities.
+# C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\ (key C:/Users/jiwoo/AppData/Local/Programs/Python/Python39/, mtime 1641386400): 22 files, no impossibilities.
+# C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin (key C:/Users/jiwoo/AppData/Local/GitHubDesktop/bin, mtime 1583356237): 4 files, no impossibilities.
+# C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps (key C:/Users/jiwoo/AppData/Local/Microsoft/WindowsApps, mtime 1658538083): 39 files, no impossibilities.
+# C:\OpenCV\build\x64\vc15\bin (key C:/OpenCV/build/x64/vc15/bin, mtime 1645526134): 15 files, no impossibilities.
+# C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1640612549): 7 files, no impossibilities.
+# C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/jiwoo/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1646537440): 79 files, no impossibilities.
+# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1643697642): 5 files, no impossibilities.
+
+# 5099 files, no impossibilities in 38 directories.
 
 # Implicit Rules
 
-# ������ ��Ģ ����.
+# No implicit rules.
 
-# ����
+# Files
 
-# Ÿ���� �ƴ�:
+# Not a target:
 all:
-#  ������ Ÿ��.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Ÿ���� �ƴ�:
+# Not a target:
 .DEFAULT:
-#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
-#  ���� �ð��� ���� �˻���� �ʾ���.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-# Ÿ���� �ƴ�:
+# Not a target:
 makefile:
 #  A default, MAKEFILES, or -include/sinclude makefile.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵǾ����ϴ�.
-#  ���ſ� ������.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Ÿ���� �ƴ�:
+# Not a target:
 .SUFFIXES:
-#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
-#  ���� �ð��� ���� �˻���� �ʾ���.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-# Ÿ���� �ƴ�:
+# Not a target:
 GNUmakefile:
 #  A default, MAKEFILES, or -include/sinclude makefile.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵǾ����ϴ�.
-#  ���ſ� ������.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
 # Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
-# VPATH Ž�� ���
+# VPATH Search Paths
 
-# `vpath' Ž�� ��ΰ� ����.
+# No `vpath' search paths.
 
-# �Ϲ����� (`VPATH' ����) Ž�� ��ΰ� ����.
+# No general (`VPATH' variable) search path.
 
 # # of strings in strcache: 0
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# ����ũ ����Ÿ ���̽� ��ħ, Sat Jul 23 11:54:06 2022
-����
+# Finished Make data base on Sat Jul 23 11:58:29 2022
+
  
