@@ -12,6 +12,7 @@ int GetHeight(btreeNode* bst)
 {
 	int leftH, rightH;
 
+
 	if (bst == nullptr)
 		return 0;
 

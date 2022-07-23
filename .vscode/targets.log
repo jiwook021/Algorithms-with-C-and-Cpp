@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Sat Jul 23 11:01:32 2022
+# Make data base, printed on Sat Jul 23 11:05:44 2022
 
 # Variables
 
@@ -35,10 +35,7 @@ SHELL := sh.exe
 # environment
 WINDIR = C:\WINDOWS
 # environment
-VSCODE_NLS_ 
-make.exe: *** No rule to make target `all'.  Stop.
-
-CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 ONEDRIVE = C:\Users\jiwoo\OneDrive
 # environment
@@ -47,6 +44,8 @@ PUBLIC = C:\Users\Public
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile
 MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 TMP = C:\Users\jiwoo\AppData\Local\Temp
 # environment
@@ -60,7 +59,7 @@ OPENCV_DIR = C:\OpenCV
 # environment
 CDS_LIC_ONLY = 1
 # environment
-PATH = C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\;C:\Program Files\MATLAB\R2020b\runtime\win64;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\MinGW\bin;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\OpenCV\build\x64\vc15\bin;C:\Program Files\Bandizip\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\;C:\Program Files\MATLAB\R2020b\runtime\win64;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;C:\Users\jiwoo\.dotnet\tools;C:\Python34\Scripts;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\OpenCV\x64\vc16\bin;;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\.dotnet\tools
+PATH = C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\;C:\Program Files\MATLAB\R2020b\runtime\win64;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\MinGW\bin;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\OpenCV\build\x64\vc15\bin;C:\Program Files\Bandizip\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;C:\Users\jiwoo\.dotnet\tools;C:\Python34\Scripts;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\OpenCV\x64\vc16\bin;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\.dotnet\tools
 # environment
 SW_SIM_HYDRA = C:\Program Files\Common Files\SolidWorks Shared\Simulation Worker Agent\
 # environment
@@ -92,7 +91,7 @@ NRFGOSTUDIOPATH = C:\Program Files (x86)\Nordic Semiconductor\nRFgo Studio
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16280_CHSGAGNOGDZFZQNZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27660_UPVPNNHNLDQHJFSV
 # environment
 COMPUTERNAME = DESKTOP-SFJ547R
 # environment
@@ -138,7 +137,7 @@ FFMPEG = C:\Users\jiwoo\Desktop\ffmpeg-4.3.1-2020-10-01-full_build\ffmpeg
 # environment
 LOCALAPPDATA = C:\Users\jiwoo\AppData\Local
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = %ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := make.exe
 # environment
@@ -200,8 +199,6 @@ SUFFIXES :=
 # environment
 SYSTEMDRIVE = C:
 # environment
-SESSIONNAME = Console
-# environment
 PROCESSOR_REVISION = 8e0c
 # environment
 SW_SIM_MPIT = INTELMPI
@@ -212,11 +209,13 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 16280
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 27660
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-SFJ547R
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=12/117=10%
+# Load=101/1024=10%, Rehash=0, Collisions=12/118=10%
 
 # Pattern-specific Variable Values
 
@@ -224,7 +223,6 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-SFJ547R
 
 # Directories
 
-# : could not be stat'd.
 # C:\Program Files\Bandizip\ (key C:/Program Files/Bandizip/, mtime 1645869432): 20 files, no impossibilities.
 # C:\Python34\Scripts: could not be stat'd.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1644685351): 32 files, no impossibilities.
@@ -264,7 +262,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-SFJ547R
 # C:\Users\jiwoo\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/jiwoo/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1646537440): 79 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1643697642): 5 files, no impossibilities.
 
-# 5099 files, no impossibilities in 39 directories.
+# 5099 files, no impossibilities in 38 directories.
 
 # Implicit Rules
 
@@ -326,6 +324,8 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sat Jul 23 11:01:32 2022
+# Finished Make data base on Sat Jul 23 11:05:44 2022
 
  
+make.exe: *** No rule to make target `all'.  Stop.
+
