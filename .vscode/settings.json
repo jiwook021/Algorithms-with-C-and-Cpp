@@ -1,3 +1,10 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "algraphkruskal.h": "c",
+        "arraybasestack.h": "c",
+        "dlinkedlist.h": "c",
+        "priorityqueue.h": "c",
+        "usefulheap.h": "c"
+    }
 }

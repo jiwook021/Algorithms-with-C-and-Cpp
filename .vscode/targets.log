@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# ����ũ ����Ÿ���̽�, Mon Jul 25 10:19:11 2022
+# ����ũ ����Ÿ���̽�, Mon Jul 25 13:05:39 2022
 �� ǥ��
 # ����
 
@@ -69,7 +69,10 @@ ALLUSERSPROFILE = C:\ProgramData
 # ȯ��
 NUMBER_OF_PROCESSORS = 12
 # ȯ��
-ELECTRON_RUN_AS_NODE = 1
+ELECTRON_RUN_AS_NODE = 
+make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
+
+ 1
 # �⺻��
 .FEATURES := target-specific order-only second-expansion else-if archives
 # �ڵ�
@@ -90,13 +93,10 @@ USERNAME = jiwoo
 PUBLIC = C:\Users\Public
 # ȯ��
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# ȯ� 
-make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
-
-�
+# ȯ��
 VSCODE_CODE_CACHE_PATH = C:\Users\jiwoo\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # ȯ��
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # ȯ��
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # ȯ��
@@ -278,6 +278,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# ����ũ ����Ÿ ���̽� ��ħ, Mon Jul 25 10:19:11 2022
+# ����ũ ����Ÿ ���̽� ��ħ, Mon Jul 25 13:05:39 2022
 ����
  
