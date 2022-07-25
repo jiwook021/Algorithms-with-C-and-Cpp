@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# ����ũ ����Ÿ���̽�, Mon Jul 25 13:05:39 2022
+# ����ũ ����Ÿ���̽�, Mon Jul 25 16:05:56 2022
 �� ǥ��
 # ����
 
@@ -198,7 +198,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
 # C:\Program Files\Docker\Docker\resources\bin (Ű C:/Program Files/Docker/Docker/resources/bin, ����ð� 1654161131): 13 ����, 0�� �Ұ���.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (Ű C:/WINDOWS/System32/WindowsPowerShell/v1.0/, ����ð� 1643358952): 31 ����, 0�� �Ұ���.
 # C:\WINDOWS\System32\Wbem (Ű C:/WINDOWS/System32/Wbem, ����ð� 1658066664): 170 ����, 0�� �Ұ���.
-# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1658540161): 31 ����, 0�� �Ұ���.
+# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1658722123): 30 ����, 0�� �Ұ���.
 # C:\msys64\mingw32\bin (Ű C:/msys64/mingw32/bin, ����ð� 1644198235): 2 ����, 0�� �Ұ���.
 # C:\Program Files\TortoiseSVN\bin (Ű C:/Program Files/TortoiseSVN/bin, ����ð� 1645672799): 64 ����, 0�� �Ұ���.
 # C:\mingw\bin (Ű C:/mingw/bin, ����ð� 1643335684): 73 ����, 0�� �Ұ���.
@@ -216,7 +216,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
 # C:\Program Files\CMake\bin (Ű C:/Program Files/CMake/bin, ����ð� 1644199504): 7 ����, 0�� �Ұ���.
 # C:\Program Files (x86)\GnuWin32\bin (Ű C:/Program Files (x86)/GnuWin32/bin, ����ð� 1644564198): 5 ����, 0�� �Ұ���.
 
-# 3541 ����, 0�� impossibilities in 21 directories.
+# 3540 ����, 0�� impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -278,6 +278,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# ����ũ ����Ÿ ���̽� ��ħ, Mon Jul 25 13:05:39 2022
+# ����ũ ����Ÿ ���̽� ��ħ, Mon Jul 25 16:05:56 2022
 ����
  

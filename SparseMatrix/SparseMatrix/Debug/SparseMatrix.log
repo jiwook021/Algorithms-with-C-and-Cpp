@@ -1,0 +1,43 @@
+﻿  main.c
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(7,2): error C2061: syntax error: identifier 'NodeMatrix'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(8,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(9,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(10,1): error C2059: syntax error: '}'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(18,2): error C2061: syntax error: identifier 'LinkedList'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(19,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(20,1): error C2059: syntax error: '}'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2143: syntax error: missing ')' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2081: 'LinkedList': name in formal parameter list illegal
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,68): error C2059: syntax error: ')'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(9,9): error C2065: 'Matrix': undeclared identifier
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(9,9): error C2146: syntax error: missing ';' before identifier 'mat'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(9,12): error C2065: 'mat': undeclared identifier
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(11,18): error C2065: 'mat': undeclared identifier
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(11,18): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(11,14): warning C4024: 'Init_Matrix': different types for formal and actual parameter 1
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(11,26): warning C4020: 'Init_Matrix': too many actual parameters
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(12,15): warning C4013: 'Matrix_insert' undefined; assuming extern returning int
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\main.c(12,31): error C2065: 'mat': undeclared identifier
+  Sparse_Matrix.c
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(7,2): error C2061: syntax error: identifier 'NodeMatrix'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(8,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(9,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Circular_Linked_List.h(10,1): error C2059: syntax error: '}'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(18,2): error C2061: syntax error: identifier 'LinkedList'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(19,12): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(20,1): error C2059: syntax error: '}'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2143: syntax error: missing ')' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2081: 'LinkedList': name in formal parameter list illegal
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,62): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.h(24,68): error C2059: syntax error: ')'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(7,25): error C2143: syntax error: missing ')' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(7,25): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(7,34): error C2059: syntax error: 'type'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(7,51): error C2059: syntax error: ')'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(22,58): error C2143: syntax error: missing ')' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(22,58): error C2081: 'Matrix': name in formal parameter list illegal
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(22,58): error C2143: syntax error: missing '{' before '*'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(22,63): error C2059: syntax error: ')'
+C:\Users\jiwoo\Desktop\c++_Projects\SparseMatrix\SparseMatrix\Sparse_Matrix.c(23,1): error C2054: expected '(' to follow 'mat'
+  Generating Code...
