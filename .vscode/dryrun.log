@@ -1,6 +1,7 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: Entering directory `g:/My Drive/Data_Structure-Algorithm_with_C'
-make.exe: Leaving directory `g:/My Drive/Data_Structure-Algorithm_with_C'
+make.exe: Entering directory `g:/�� ����̺�/Data_Structure-Algorithm_with_C'
  
-make.exe: *** No targets specified and no makefile found.  Stop.
+make.exe: *** Ÿ���� �������� �ʾҰ� ����ũ������ �����ϴ�.  ����.
 
+make.exe: Leaving directory `g:/�� ����̺�/Data_Structure-Algorithm_with_C'
+ 
