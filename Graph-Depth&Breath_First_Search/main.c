@@ -33,6 +33,7 @@ void testBFS()
     AddEdge(&graph, E, A);
 
     ShowGraphEdgeInfo(&graph);
+    printf("==========BFS==========\n");
     BFShowGraphVertex(&graph,A);
 
     GraphDestory(&graph);

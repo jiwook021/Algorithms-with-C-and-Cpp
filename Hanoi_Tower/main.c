@@ -1,4 +1,5 @@
 #include <stdio.h>
+void hanoi(int n, char from, char by, char to);
 
 void hanoi(int n, char from, char by, char to)
 {
