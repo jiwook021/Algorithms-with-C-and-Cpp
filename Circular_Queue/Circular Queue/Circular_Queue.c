@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-
-
 bool QisEmpty()
 {
 	if (front == NULL && rear == NULL)

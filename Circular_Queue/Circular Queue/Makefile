@@ -1,10 +1,7 @@
-CC = gcc
-CFLAGS  = -g -Wall
-Language = c
-
-Target1 = Circular_Queue
-
-
+CC=gcc
+CFLAGS=-g -Wall
+Language =c
+Target1=Circular_Queue
 
 main: main.o $(Target1).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o 
@@ -15,5 +12,5 @@ main.o: main.$(Language) $(Target1).h
 $(Target1).o: $(Target1).h
 
 clean:
-	$(RM) $(Target)
+	$(RM) $(Target).o
 	$(RM) main
