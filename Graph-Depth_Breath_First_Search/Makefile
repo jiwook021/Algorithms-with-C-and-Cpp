@@ -19,7 +19,10 @@ $(Target3).o: $(Target3).h
 $(Target4).o: $(Target4).h $(Target2).h $(Target1).h 
   
 clean:
-	$(RM) $(Target)
+	$(RM) $(Target1)
 	$(RM) $(Target2)
 	$(RM) $(Target3)
-	$(RM) main
+	$(RM) $(Target1).o
+	$(RM) $(Target2).o
+	$(RM) $(Target3).o
+	$(RM) main.o

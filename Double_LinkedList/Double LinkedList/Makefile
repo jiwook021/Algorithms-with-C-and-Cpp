@@ -16,3 +16,5 @@ $(Target1).o: $(Target1).hpp
 clean:
 	$(RM) $(Target)
 	$(RM) main
+	$(RM) main.exe
+	$(RM) main.o

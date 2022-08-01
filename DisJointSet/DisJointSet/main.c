@@ -13,6 +13,7 @@ void unionParent(int parent[], int a, int b)
 
 	if (a < b) parent[b] = a;
 	else parent[a] = b;
+	printf("\nUnion: %d %d",a,b);
 }
 
 int findParent(int parent[], int a, int b)
@@ -35,7 +36,7 @@ int main(void) {
 	unionParent(parent, 5, 6);
 	unionParent(parent, 6, 7);
 	unionParent(parent, 7, 8);
-	printf("is 1 and 5 connected?%d\n", findParent(parent, 1, 5));
+	printf("\nis 1 and 5 connected?% d\n", findParent(parent, 1, 5));
 	unionParent(parent, 1, 5);
-	printf("is 1 and 5 connected? %d\n", findParent(parent, 1, 5));
+	printf("\nis 1 and 5 connected? %d\n", findParent(parent, 1, 5));
 }
