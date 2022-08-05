@@ -17,6 +17,7 @@ int main()
 	HInsert(&heap, 3, 9);
 
 
+	printf("\n=====Print heap=====\n");
 	while (!HIsEmpty(&heap))
 		printf("%d \n", Hdelete(&heap));
 

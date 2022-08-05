@@ -1,5 +1,6 @@
 #include "heap.h"
 #include <stdbool.h>
+#include <stdio.h>
 
 void heapInit(heap* ph)
 {
@@ -49,6 +50,7 @@ void HInsert(heap* ph, HData data, Priority pr)
 	} 
 	ph->heapArr[idx] = nelem; 
 	ph->numOfData += 1; 
+	printf("\nInserted %d with priority of %d ",(nelem.data),(nelem.pr));
 
 }
 
