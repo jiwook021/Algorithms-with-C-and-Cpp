@@ -29,4 +29,10 @@ clean:
 	$(RM) $(Target4)
 	$(RM) $(Target5)
 	$(RM) $(Target6)
+	$(RM) $(Target2).o
+	$(RM) $(Target3).o
+	$(RM) $(Target4).o
+	$(RM) $(Target5).o
+	$(RM) $(Target6).o
+	$(RM) KruskalMain.o
 	$(RM) KruskalMain

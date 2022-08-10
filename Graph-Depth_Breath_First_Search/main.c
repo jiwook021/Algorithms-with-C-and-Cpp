@@ -42,6 +42,6 @@ void testBFS()
 int main()
 {
     testBFS();
-
+    printf("\n");
     return 0;
 }

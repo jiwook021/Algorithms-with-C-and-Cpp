@@ -13,5 +13,5 @@ main.o: main.$(Language) $(Target1).h
 $(Target1).o: $(Target1).h 
   
 clean:
-	$(RM) $(Target)
-	$(RM) main
+	$(RM) $(Target1).o
+	$(RM) main.o

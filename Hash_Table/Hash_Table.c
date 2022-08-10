@@ -39,6 +39,10 @@ void TBLInsert(Table *pt, Key k, Value v)
     pt->tbl[hv].val = v;
     pt->tbl[hv].key = k;
     pt->tbl[hv].status = INUSE;
+
+    printf("Inserted SSN: %d ", v->ssn);
+    printf("Name: %s ", v->name);
+    printf("Address: %s \n", v->addr);
 }
 
 Value TBLDelete(Table *pt, Key k)

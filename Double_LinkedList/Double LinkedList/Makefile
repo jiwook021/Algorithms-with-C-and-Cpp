@@ -14,7 +14,6 @@ main.o: main.$(Language) $(Target1).hpp
 $(Target1).o: $(Target1).hpp 
   
 clean:
-	$(RM) $(Target)
+	$(RM) $(Target1).o
 	$(RM) main
-	$(RM) main.exe
 	$(RM) main.o
