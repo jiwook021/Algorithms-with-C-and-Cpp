@@ -15,4 +15,4 @@ $(Target1).o: $(Target1).h
 clean:
 	$(RM) $(Target1).o
 	$(RM) main.o
-	
+	$(RM) main

@@ -33,6 +33,7 @@ void Queue::enqueue(int Data)
 		rear->next = node;
 		rear = node;
 	}
+	printf("Enqueued %d\n",Data);
 }
 
 int Queue::dequeue()

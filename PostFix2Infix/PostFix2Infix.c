@@ -35,7 +35,6 @@ void Posfix2Infix(char* szPostfixInput, char* szInfixOutput)
 {
     char* stack[10] = { 0 };
     int top = 0;
-    int OutputIndex = 0;
     int i = 0;
     char* tempOp1;
     char* tempOp2;
@@ -85,7 +84,7 @@ int main()
     Posfix2Infix(szPostfixInput2, szInfixOutput2);
 
     printf("Postfix input 1: %s \n", szPostfixInput1);
-    printf("Postfix Output 2: %s \n\n", szInfixOutput1);
+    printf("Postfix output 2: %s \n\n", szInfixOutput1);
 
     printf("Infix input 1: %s \n", szPostfixInput2);
     printf("Infix output 2: %s \n\n", szInfixOutput2);
