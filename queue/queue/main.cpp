@@ -1,30 +1,30 @@
 #include <iostream>
-#include "queue.h"
+#include "queue.hpp"
 
 int main()
 {
 	queue test; 
 	test.enqueue(1);
-	std::cout << test.peek() << std::endl; 
+	std::cout << "\nPeek: "<<test.peek() << std::endl; 
 	test.enqueue(2);
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.enqueue(3);
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.enqueue(4);
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.enqueue(5);
 	
 	test.dequeue(); 
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.dequeue();
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.dequeue();
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.dequeue();
-	std::cout << test.peek() << std::endl;
+	std::cout << "\nPeek: "<< test.peek() << std::endl;
 	test.dequeue();
-	std::cout << test.peek() << std::endl;
-
+	
+	printf("\n\n");
 }
 
 

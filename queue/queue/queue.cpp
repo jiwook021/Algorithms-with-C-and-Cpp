@@ -1,4 +1,4 @@
-#include "queue.h"
+#include "queue.hpp"
 #include <cstdlib>
 #include <iostream>
 
@@ -27,11 +27,13 @@ void queue::enqueue(int data)
 {
 	rear=NextPosIdx(rear); 
 	queArr[rear] = data; 
+	printf("\nEnqueued: %d",data);
 }
 
 int queue::dequeue()
 {
 	front = NextPosIdx(front);
+	printf("\ndequeued: %d",front);
 	return queArr[front];
 }
 
