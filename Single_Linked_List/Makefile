@@ -8,13 +8,14 @@ Language = cpp
 main: main.o $(Target1).o $(Target2).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o $(Target2).o 
  
-main.o: main.$(Language) $(Target1).h 
+main.o: main.$(Language) $(Target1).hpp
 	$(CC) $(CFLAGS) -c main.$(Language)
  
-$(Target1).o: $(Target1).h $
-$(Target2).o: $(Target1).h 
+$(Target1).o: $(Target1).hpp
+$(Target2).o: $(Target1).hpp
  
 clean:
-	$(RM) $(Target)
-	$(RM) $(Target2)
+	$(RM) $(Target1).o
+	$(RM) $(Target2).o
+	$(RM) main.o
 	$(RM) main

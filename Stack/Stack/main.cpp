@@ -1,5 +1,5 @@
 #include <iostream>
-#include "stack.h"
+#include "stack.hpp"
 
 int main()
 {
@@ -7,9 +7,9 @@ int main()
 
 	test.push(1);
 	test.push(2);
-	std::cout << test.peek() << std:: endl;
+	std::cout << "Peek: " << test.peek() << std:: endl;
 	test.pop(); 
-	std::cout << test.peek() << std::endl;
+	std::cout << "Peek: " << test.peek() << std::endl;
 }
 
 

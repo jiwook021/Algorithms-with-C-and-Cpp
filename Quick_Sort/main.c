@@ -45,10 +45,17 @@ int main()
 {
     int arr[7] = {3,2,4,1,7,6,5};
     int len= sizeof(arr)/sizeof(int); 
+    
+    printf("Before Quicksort: ");
     int i; 
+    for(i=0;i<len;i++)
+        printf("%d",arr[i]);
+
+    
 
     QuickSort(arr,0,sizeof(arr)/sizeof(int) -1); 
 
+    printf("\n\nAfter Quicksort: ");
     for(i=0;i<len;i++)
         printf("%d",arr[i]);
 
