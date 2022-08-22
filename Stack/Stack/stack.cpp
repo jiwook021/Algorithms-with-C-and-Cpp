@@ -1,4 +1,4 @@
-#include "stack.h"
+#include "stack.hpp"
 #include <cstdlib>
 #include <iostream>
 
@@ -16,12 +16,14 @@ void stack::push(int data)
 	newNode->data = data; 
 	newNode->next = head->next; 
 	head->next = newNode; 
+	printf("Pushed %d\n",data);
 }
 
 void stack::pop()
 {
 	Node* deleteNode = head->next;
 	head->next = head->next->next;
+	printf("Pop: %d\n", deleteNode->data);
 	free(deleteNode);
 }
 
