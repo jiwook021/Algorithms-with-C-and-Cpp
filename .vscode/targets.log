@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# ����ũ ����Ÿ���̽�, Fri Jul 29 18:26:27 2022
+# ����ũ ����Ÿ���̽�, Thu Aug 18 18:05:17 2022
 �� ǥ��
 # ����
 
@@ -45,6 +45,8 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # ����ũ����
 MAKEFILE_LIST := 
 # ȯ��
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# ȯ��
 TMP = C:\Users\jiwoo\AppData\Local\Temp
 # ȯ��
 PROGRAMW6432 = C:\Program Files
@@ -53,10 +55,10 @@ PROGRAMDATA = C:\ProgramData
 # ȯ��
 VSCODE_CWD = C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code
 # ȯ��
-PATH = D:\Programs\vmware\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Python34;C:\mingw\bin;C:\msys64\mingw32\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Bandizip\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\jiwoo\Ap 
+PATH = D:\Programs\vmware\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Python34;C:\mingw\bin;C:\msys64\mingw32\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Bandizip\;C:\Program Files\Docker\Docker\resources\bin;C:\Progra 
 make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
 
-pData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;D:\Anaconda;D:\Anaconda\Library;D:\Anaconda\Scripts;
+mData\DockerDesktop\version-bin;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;D:\Anaconda;D:\Anaconda\Library;D:\Anaconda\Scripts;
 # ȯ��
 LM_LICENSE_FILE = \\192.168.0.111\Vivado_License\Xilinx.lic;\2100@DESKTOP=DOMGSRH;2100@192.168.0.111;
 # ȯ��
@@ -78,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # �ڵ�
 %F = $(notdir $%)
 # ȯ��
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_26068_RZYJZKOSDIHKAIOB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15716_YIXJYFRHVOBRRZBT
 # ȯ��
 COMPUTERNAME = DESKTOP-9NPK4EB
 # ȯ��
@@ -182,11 +184,13 @@ LANG = C
 # ȯ��
 PROCESSOR_LEVEL = 6
 # ȯ��
-VSCODE_PID = 26068
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# ȯ��
+VSCODE_PID = 15716
 # ȯ��
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=9/102=9%
+# Load=87/1024=8%, Rehash=0, Collisions=9/104=9%
 
 # Pattern-specific Variable Values
 
@@ -198,7 +202,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
 # C:\Program Files\Docker\Docker\resources\bin (Ű C:/Program Files/Docker/Docker/resources/bin, ����ð� 1654161131): 13 ����, 0�� �Ұ���.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (Ű C:/WINDOWS/System32/WindowsPowerShell/v1.0/, ����ð� 1643358952): 31 ����, 0�� �Ұ���.
 # C:\WINDOWS\System32\Wbem (Ű C:/WINDOWS/System32/Wbem, ����ð� 1658066664): 170 ����, 0�� �Ұ���.
-# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1659084646): 30 ����, 0�� �Ұ���.
+# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1659084646): 34 ����, 0�� �Ұ���.
 # C:\msys64\mingw32\bin (Ű C:/msys64/mingw32/bin, ����ð� 1644198235): 2 ����, 0�� �Ұ���.
 # C:\Program Files\TortoiseSVN\bin (Ű C:/Program Files/TortoiseSVN/bin, ����ð� 1645672799): 64 ����, 0�� �Ұ���.
 # D:\Anaconda\Library (Ű D:/Anaconda/Library, ����ð� 1658902888): 21 ����, 0�� �Ұ���.
@@ -207,19 +211,19 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
 # C:\Program Files\PuTTY\ (Ű C:/Program Files/PuTTY/, ����ð� 1642485510): 12 ����, 0�� �Ұ���.
 # D:\Programs\vmware\bin\ (Ű D:/Programs/vmware/bin/, ����ð� 1652927609): 4 ����, 0�� �Ұ���.
 # C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin (Ű C:/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code/bin, ����ð� 1658544870): 4 ����, 0�� �Ұ���.
-# C:\WINDOWS (Ű C:/WINDOWS, ����ð� 1658066663): 114 ����, 0�� �Ұ���.
+# C:\WINDOWS (Ű C:/WINDOWS, ����ð� 1660421375): 115 ����, 0�� �Ұ���.
 # D:\Anaconda (Ű D:/Anaconda, ����ð� 1658903084): 89 ����, 0�� �Ұ���.
 # C:\Python34: stat�� �� �� �������ϴ�.
 # D:\Anaconda\Scripts (Ű D:/Anaconda/Scripts, ����ð� 1658902964): 354 ����, 0�� �Ұ���.
 # C:\ProgramData\DockerDesktop\version-bin: stat�� �� �� �������ϴ�.
 # C:\Program Files\Git\cmd (Ű C:/Program Files/Git/cmd, ����ð� 1644199690): 8 ����, 0�� �Ұ���.
-# C:\WINDOWS\system32 (Ű C:/WINDOWS/system32, ����ð� 1658125068): 2949 ����, 0�� �Ұ���.
+# C:\WINDOWS\system32 (Ű C:/WINDOWS/system32, ����ð� 1660711262): 2949 ����, 0�� �Ұ���.
 # C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin (Ű C:/Users/jiwoo/AppData/Local/GitHubDesktop/bin, ����ð� 1642487105): 4 ����, 0�� �Ұ���.
 # C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps (Ű C:/Users/jiwoo/AppData/Local/Microsoft/WindowsApps, ����ð� 1652875691): 30 ����, 0�� �Ұ���.
 # C:\Program Files\CMake\bin (Ű C:/Program Files/CMake/bin, ����ð� 1644199504): 7 ����, 0�� �Ұ���.
 # C:\Program Files (x86)\GnuWin32\bin (Ű C:/Program Files (x86)/GnuWin32/bin, ����ð� 1644564198): 5 ����, 0�� �Ұ���.
 
-# 4004 ����, 0�� impossibilities in 24 directories.
+# 4009 ����, 0�� impossibilities in 24 directories.
 
 # Implicit Rules
 
@@ -281,6 +285,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# ����ũ ����Ÿ ���̽� ��ħ, Fri Jul 29 18:26:27 2022
+# ����ũ ����Ÿ ���̽� ��ħ, Thu Aug 18 18:05:17 2022
 ����
  
