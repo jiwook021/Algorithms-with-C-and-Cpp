@@ -3,8 +3,6 @@
 #include "Binary_tree.hpp"
 #include <iostream>
 
-
-
 int GetHeight(btreeNode* Binary_Search_Tree)
 {
 	int leftH, rightH;
