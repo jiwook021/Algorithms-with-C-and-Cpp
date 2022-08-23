@@ -3,6 +3,7 @@ CFLAGS  = -g -Wall
 Language = c
 
 main:
-	$(CC) $(CFLAGS) Infix2Posfix.$(Language) -o Infix2Posfix 
+	$(CC) $(CFLAGS) Infix2Posfix.$(Language) -o main 
 clean:
-	$(RM) Infix2Posfix
+	$(RM) main
+	$(RM) main.exe

@@ -132,12 +132,9 @@ int main()
 
     char szPostfixOutput1[30] = {0};
     
-    Infix2Posfix(szInfixInput1, szPostfixOutput1);
-   
+    Infix2Posfix(szInfixInput1, szPostfixOutput1); 
     printf("Postfix output 1: %s \n\n", szPostfixOutput1);
   
-
-
     char szInfixInput2[] = "(a/(b-c+d))*(e-a)*c";
     printf("Infix input 2: %s \n", szInfixInput2);
 

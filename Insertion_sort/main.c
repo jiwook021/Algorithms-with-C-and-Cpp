@@ -1,9 +1,9 @@
 # include <stdio.h> 
 
-void Insersort(int arr[],int n); 
+void Insertionsort(int arr[],int n); 
 
 
-void Insersort(int arr[],int n)
+void Insertionsort(int arr[],int n)
 {
     int i,j;
     int insData; 
@@ -26,14 +26,20 @@ int main(void)
 {
     int arr[5] = {5,3,2,4,1};
     int i; 
-
-    Insersort(arr, sizeof(arr)/sizeof(int) ); 
     
+    printf("Before Insertion Sort\n");
+    for(i=0; i<5; i++)
+        printf("%d", arr[i]); 
+    
+    Insertionsort(arr, sizeof(arr)/sizeof(int) ); 
+    
+
+    printf("\n\nAfter Insertion Sort\n");
     for(i=0; i<5; i++)
         printf("%d", arr[i]); 
     
 
-    printf("\n");
+    printf("\n\n");
     
     return 0; 
 }

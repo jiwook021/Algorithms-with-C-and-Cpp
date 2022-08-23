@@ -5,7 +5,6 @@
 void testDFS()
 {
     ALGraph graph2;
-    printf("==========DFS==========\n");
   
     GraphInit(&graph2,5);
     AddEdge(&graph2, A, B);
@@ -14,7 +13,8 @@ void testDFS()
     AddEdge(&graph2, C, D);
     AddEdge(&graph2, D, E);
     AddEdge(&graph2, E, A);
-
+  
+    printf("\n====Show Graph INFO====\n");
     ShowGraphEdgeInfo(&graph2);
     printf("==========DFS==========\n");
     DFShowGraphVertex(&graph2,A);
@@ -26,7 +26,6 @@ void testDFS()
 void testBFS()
 {
     ALGraph graph;
-    printf("==========BFS==========\n");
     GraphInit(&graph,5);
     AddEdge(&graph, A, B);
     AddEdge(&graph, A, D);
@@ -34,7 +33,7 @@ void testBFS()
     AddEdge(&graph, C, D);
     AddEdge(&graph, D, E);
     AddEdge(&graph, E, A);
-
+    printf("\n====Show Graph INFO====\n");
     ShowGraphEdgeInfo(&graph);
     printf("==========BFS==========\n");
     BFShowGraphVertex(&graph,A);
@@ -46,9 +45,8 @@ int main()
 {
     testBFS();
 
-    printf("\n");
-    printf("\n");
+    printf("\n\n\n");
     testDFS();
-    printf("\n");
+    printf("\n\n");
     return 0;
 }
