@@ -24,3 +24,4 @@ clean:
 	$(RM) $(Target3).o
 	$(RM) $(Target4).o
 	$(RM) main.o
+	$(RM) main

@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 void insert(int data) {
 	Node* newNode = (Node*)malloc(sizeof(Node));
-	
-	
+		
 	newNode->data = data;
 	newNode->next = NULL;
 	newNode->previous = NULL;
@@ -77,7 +75,6 @@ void search(int data)
 	{
 		printf("\nEmpty List\n");
 	}
-
 	for (int i = 0; i < size; i++)
 	{
 		current = current->next;

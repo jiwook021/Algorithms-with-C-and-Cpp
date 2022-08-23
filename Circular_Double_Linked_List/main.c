@@ -15,6 +15,7 @@ void example1()
 	print();
 
 }
+
 void example2()
 {
 	int iInput, iSelection;

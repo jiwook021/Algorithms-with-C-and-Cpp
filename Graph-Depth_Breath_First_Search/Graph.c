@@ -47,6 +47,8 @@ void AddEdge(ALGraph *pg, int fromV, int toV)
     LInsert(&(pg->adjList[fromV]),toV);
     LInsert(&(pg->adjList[toV]),fromV);
 
+    printf("Add Edge of ")
+
     pg->numE += 1;
 }
 

@@ -17,3 +17,4 @@ clean:
 	$(RM) $(Target1).o
 	$(RM) main
 	$(RM) main.o
+	$(RM) main.exe

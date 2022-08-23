@@ -3,7 +3,7 @@ CFLAGS  = -g -Wall
 
 Target1 = AVLRebalance
 Target2 = Binary_Search_Tree
-Target3 = Binary_Tree
+Target3 = Binary_tree
 Language = cpp
 
 main: main.o $(Target1).o $(Target2).o $(Target3).o 
