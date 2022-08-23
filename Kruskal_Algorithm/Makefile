@@ -36,3 +36,4 @@ clean:
 	$(RM) $(Target6).o
 	$(RM) KruskalMain.o
 	$(RM) KruskalMain
+	$(RM) KruskalMain.exe

@@ -58,14 +58,14 @@ int main(void)
 {
     int arr[7] ={3,2,4,1,7,6,5};
 
-    printf("Before Sort: ");
+    printf("Before Merge Sort: ");
     for(int i=0; i<7; i++)
     {
            printf("%d",arr[i]);
     }
     MergeSort(arr,0,sizeof(arr)/sizeof(int)-1); 
 
-    printf("\nAfter Sort: ");
+    printf("\nAfter Merge Sort: ");
     for(int i=0; i<7; i++)
     {
         printf("%d",arr[i]);
