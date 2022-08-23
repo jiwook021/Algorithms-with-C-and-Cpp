@@ -1,7 +1,6 @@
 #include "Binary_tree.hpp"
 #include <iostream>
 
-
 btreeNode::btreeNode(int data)
 {
 	this->data = data;
@@ -58,9 +57,7 @@ btreeNode* btreeNode::RemoveLeftTree()
 
 btreeNode* btreeNode::RemoveRightTree()
 {
-
 	btreeNode* delNode = nullptr;
-
 	if (this != nullptr) {
 		delNode = this->right;
 		this->right = nullptr;
@@ -85,7 +82,6 @@ void Travelinorder(btreeNode * root)
 	{
 		return;
 	}
-
 	Travelinorder(root->GetLeftTree());
 	std::cout << root->GetData()<< std::endl;
 	Travelinorder(root->GetRightTree());
@@ -97,7 +93,6 @@ void Travelpreorder(btreeNode* root)
 	{
 		return;
 	}
-
 	std::cout << root->GetData() << std::endl;
 	Travelpreorder(root->GetLeftTree());
 	Travelpreorder(root->GetRightTree());
@@ -109,7 +104,6 @@ void Travelpostorder(btreeNode* root)
 	{
 		return;
 	}
-
 	Travelinorder(root->GetLeftTree());
 	Travelinorder(root->GetRightTree());
 	std::cout << root->GetData() << std::endl;

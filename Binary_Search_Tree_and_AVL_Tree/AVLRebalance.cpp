@@ -31,7 +31,6 @@ int getHeightDiff(btreeNode* Binary_Search_Tree)
 	return left_search_height - right_search_height;
 }
 
-
 btreeNode* RotateLL(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node; 
@@ -55,6 +54,7 @@ btreeNode* RotateRR(btreeNode* Binary_Search_Tree)
 	Child_Node->ChangeLeftTree(Parent_Node);
 	return Child_Node;
 }
+
 btreeNode* RotateLR(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node;

@@ -1,13 +1,11 @@
 #include <iostream>
 
-#define LENGTH 10
-
 int temp; 
 
 int main()
 { 
-    int arr [LENGTH] = {10,7,5,3,4,1,2,6,8,9};  
-    
+    int arr [] = {10,7,5,3,4,1,2,6,8,9};  
+    int LEGNTH = sizeof(arr)/sizeof(arr[0]);
     for(int i =0; i<LENGTH-1; i++)
     {
         for(int j=0; j <LENGTH-i-1; j++)

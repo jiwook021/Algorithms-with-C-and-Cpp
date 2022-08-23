@@ -14,8 +14,6 @@ int main()
 	BSTInsert(&bstRoot, 2);
 	BSTInsert(&bstRoot, 3);
 */
-	
-
 	btreeNode* avlRoot;
 	
 	BSTMakeAndInit(&avlRoot);

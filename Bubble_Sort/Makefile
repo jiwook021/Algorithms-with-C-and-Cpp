@@ -6,4 +6,4 @@ main:
 	$(CC) $(CFLAGS) main.$(Language) -o main 
 clean:
 	$(RM) main.exe
-	$(RM) main
+	$(RM) main.o
