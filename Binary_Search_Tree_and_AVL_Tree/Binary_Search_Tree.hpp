@@ -3,7 +3,7 @@
 #include "Binary_tree.hpp"
 
 void BSTMakeAndInit(btreeNode ** pRoot); 
-int BSTGetNodeData(btreeNode* bst); 
+const int BSTGetNodeData(btreeNode* bst); 
 btreeNode* BSTInsert(btreeNode** pRoot, int data); 
 btreeNode* BSTSearch(btreeNode* bst, int target);
 btreeNode* BSTRemove(btreeNode** pRoot, int target);

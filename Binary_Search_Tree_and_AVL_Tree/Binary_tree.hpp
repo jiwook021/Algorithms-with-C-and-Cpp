@@ -29,13 +29,4 @@ void Travelinorder(btreeNode* root);
 void Travelpreorder(btreeNode* root);
 void Travelpostorder(btreeNode* root); 
 
-
-
-
-
-
-
-
-
-
 #endif

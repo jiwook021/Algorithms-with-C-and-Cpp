@@ -1,17 +1,17 @@
 CC = g++
-CFLAGS  = -g -Wall
-
+CFLAGS  = -g -Wall -std=c++17
 
 Target1 = AVLRebalance
 Target2 = Binary_Search_Tree
 Target3 = Binary_tree
+main = main
 Language = cpp
 
-main: main.o $(Target1).o $(Target2).o $(Target3).o 
+main: $(main).o $(Target1).o $(Target2).o $(Target3).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o $(Target2).o $(Target3).o
  
-main.o: main.$(Language) $(Target1).hpp $(Target2).hpp $(Target3).hpp
-	$(CC) $(CFLAGS) -c main.$(Language)
+main.o: $(main).$(Language) $(Target1).hpp $(Target2).hpp $(Target3).hpp
+	$(CC) $(CFLAGS) -c $(main).$(Language)
  
 $(Target1).o: $(Target1).hpp $(Target2).hpp $(Target3).hpp
 $(Target2).o: $(Target2).hpp $(Target2).hpp

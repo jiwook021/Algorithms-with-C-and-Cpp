@@ -1,13 +1,13 @@
 #include "Binary_Search_Tree.hpp"
 #include "AVLRebalance.hpp"
-#include <malloc.h>
+#include <cstdlib>
 
 void BSTMakeAndInit(btreeNode** Parent_Root)
 {
 	*Parent_Root = nullptr; 
 }
 
-int BSTGetNodeData(btreeNode* Binary_Search_tree_Node)
+const int BSTGetNodeData(btreeNode* Binary_Search_tree_Node)
 {
 	return Binary_Search_tree_Node->GetData();
 }

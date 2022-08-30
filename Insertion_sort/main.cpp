@@ -1,10 +1,31 @@
-#include <iostream>
+#include <iostream> 
 #include <stdlib.h> 
 #include <time.h>
 #include <iomanip> 
 
+void Insertionsort(int arr[],int n); 
 
 #define ArrayLength 100
+
+
+void Insertionsort(int arr[],int n)
+{
+    int i,j;
+    int insData; 
+    for(i=1;i<n;i++)
+    {
+        insData=arr[i];
+        for(j=i-1; j>=0;j--)
+        {
+            if(arr[j]>insData)
+                arr[j+1]= arr[j];
+            else 
+                break;
+        }
+
+        arr[j+1] =insData; 
+    }
+}
 
 void PrintArray(int arr[ArrayLength])
 {
@@ -21,47 +42,30 @@ void InputRandomNumber_ToArray(int arr[ArrayLength])
          arr [i] = rand() % 10 + 1;
     }
 }
-int main()
-{ 
 
-    int temp; 
+int main(void)
+{
     clock_t starttime,endtime;
     starttime = clock();
-    srand (time(NULL));
-    
+
+    srand (time(NULL));   
     int arr [ArrayLength];
 
     InputRandomNumber_ToArray(arr);
 
-    std::cout<<"Before Bubble Sort Array: \n";
-
+    printf("Before Insertion Sort\n");
+    PrintArray(arr);   
+    Insertionsort(arr, sizeof(arr)/sizeof(int) ); 
+    
+    printf("\n\nAfter Insertion Sort\n");
     PrintArray(arr);
-    
-    for(int i =0; i<ArrayLength-1; i++)
-    {
-        for(int j=0; j <ArrayLength-i-1; j++)
-        {
-            if (arr[j+1]<arr[j]) 
-            {
-                temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp; 
-            }
+   
 
-        }
-    }
-
-    std::cout<<"\n\nAfter Bubble Sort Array: \n";
-    
-    PrintArray(arr);
-    
-    std::cout<<std::endl;
-    
-    endtime = clock();
-    
+    printf("\n\n");
+    endtime = clock();   
     double time_taken = double(endtime - starttime)/ double(CLOCKS_PER_SEC);
     std::cout << "Time taken by program is : " << std::fixed << time_taken << std::setprecision(10);
     std::cout << " sec " << std::endl;
-
-    return 0;
+    
+    return 0; 
 }

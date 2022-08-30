@@ -1,5 +1,25 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <stdlib.h> 
+#include <time.h>
+#include <iomanip> 
+
+#define ArrayLength 100
+
+void PrintArray(int arr[ArrayLength])
+{
+    for(int i =0; i <ArrayLength; i++)
+    {
+        std::cout<< arr[i] <<" "; 
+    }
+}
+
+void InputRandomNumber_ToArray(int arr[ArrayLength])
+{
+    for(int i =0; i <ArrayLength; i++)
+    {
+         arr [i] = rand() % 10 + 1;
+    }
+}
 
 void MergeTwoArea(int arr[],int left, int mid, int right)
 {
@@ -56,21 +76,23 @@ void MergeSort(int arr[],int left,int right)
 
 int main(void)
 {
-    int arr[7] ={3,2,4,1,7,6,5};
+    clock_t starttime,endtime;
+    starttime = clock();
+    srand (time(NULL));
+    
+    int arr [ArrayLength];
 
-    printf("Before Merge Sort: ");
-    for(int i=0; i<7; i++)
-    {
-           printf("%d",arr[i]);
-    }
+    InputRandomNumber_ToArray(arr);
+    printf("\nBefore Merge Sort: ");
+    PrintArray(arr);   
     MergeSort(arr,0,sizeof(arr)/sizeof(int)-1); 
-
     printf("\nAfter Merge Sort: ");
-    for(int i=0; i<7; i++)
-    {
-        printf("%d",arr[i]);
-    }
+    PrintArray(arr);   
+    printf("\n\n");
 
-    printf("\n");
+    endtime = clock();   
+    double time_taken = double(endtime - starttime)/ double(CLOCKS_PER_SEC);
+    std::cout << "Time taken by program is : " << std::fixed << time_taken << std::setprecision(10);
+    std::cout << " sec " << std::endl;
     return 0; 
 }

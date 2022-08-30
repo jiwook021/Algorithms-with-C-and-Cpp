@@ -30,7 +30,7 @@ btreeNode* btreeNode::GetRightTree()
 
 void btreeNode::MakeLeftTree(btreeNode* sub)
 {
-	if (left != nullptr)
+	if (left != NULL)
 		delete left;
 
 	left = sub;
@@ -38,7 +38,7 @@ void btreeNode::MakeLeftTree(btreeNode* sub)
 
 void btreeNode::MakeRightTree(btreeNode* sub)
 {
-	if (right != nullptr)
+	if (right != NULL)
 		delete right;
 
 	right = sub;
@@ -46,21 +46,21 @@ void btreeNode::MakeRightTree(btreeNode* sub)
 
 btreeNode* btreeNode::RemoveLeftTree()
 {
-	btreeNode* delNode = nullptr;
+	btreeNode* delNode = NULL;
 
-	if (this != nullptr) {
+	if (this != NULL) {
 		delNode = this->left;
-		this->left = nullptr; 
+		this->left = NULL; 
 	}
 	return delNode;
 }
 
 btreeNode* btreeNode::RemoveRightTree()
 {
-	btreeNode* delNode = nullptr;
-	if (this != nullptr) {
+	btreeNode* delNode = NULL;
+	if (this != NULL) {
 		delNode = this->right;
-		this->right = nullptr;
+		this->right = NULL;
 	}
 	return delNode;
 }
@@ -83,7 +83,7 @@ void Travelinorder(btreeNode * root)
 		return;
 	}
 	Travelinorder(root->GetLeftTree());
-	std::cout << root->GetData()<< std::endl;
+	std::cout << root->GetData()<< " ";
 	Travelinorder(root->GetRightTree());
 }
 
@@ -93,7 +93,7 @@ void Travelpreorder(btreeNode* root)
 	{
 		return;
 	}
-	std::cout << root->GetData() << std::endl;
+	std::cout << root->GetData() << " ";
 	Travelpreorder(root->GetLeftTree());
 	Travelpreorder(root->GetRightTree());
 }
@@ -106,6 +106,6 @@ void Travelpostorder(btreeNode* root)
 	}
 	Travelinorder(root->GetLeftTree());
 	Travelinorder(root->GetRightTree());
-	std::cout << root->GetData() << std::endl;
+	std::cout << root->GetData() << " ";
 }
 
