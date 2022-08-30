@@ -90,9 +90,10 @@ void ShowGraphEdgeInfo(ALGraph * pg)
 	int i;
 	int vx;
 
+	printf("Show Graph Info \n");
 	for(i=0; i<pg->numV; i++)
 	{
-        printf("%c Connted vertex: ", i + 65);
+        printf("%c Connected vertex: ", i + 65);
 		
 		if(LFirst(&(pg->adjList[i]), &vx))
 		{
@@ -110,6 +111,7 @@ void ShowGraphEdgeWeightInfo(ALGraph * pg)
 	PQueue copyPQ = pg->pqueue;
 	Edge edge;
 
+	printf("\nShow graph weight Info\n");
 	while(!PQIsEmpty(&copyPQ))
 	{
 		edge = PDequeue(&copyPQ);

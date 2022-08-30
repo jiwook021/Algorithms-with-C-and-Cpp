@@ -4,7 +4,7 @@
 int main(void)
 {
 	ALGraph graph;
-	GraphInit(&graph, 6);      // A, B, C, D, E, F, G의 정점 생성
+	GraphInit(&graph, 6);      // A, B, C, D, E, F, G
 
 	AddEdge(&graph, A, B, 9);
 	AddEdge(&graph, B, C, 2);
@@ -20,7 +20,7 @@ int main(void)
     ShowGraphEdgeInfo(&graph);
     ShowGraphEdgeWeightInfo(&graph);
     ConKruskalMST(&graph);
-    printf("\n\nConKruskal Miniumum Spanning TREE \n\n");
+    printf("\n\nPerformed ConKruskal Miniumum Spanning Tree \n\n");
 	ShowGraphEdgeInfo(&graph);
 	ShowGraphEdgeWeightInfo(&graph);
 	GraphDestroy(&graph);

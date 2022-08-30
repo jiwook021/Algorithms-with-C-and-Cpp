@@ -11,12 +11,9 @@ int main()
 	list.insert(3);
 	list.insert(4);
 	list.insert(5, 3);
-
 	list.print();
 	list.search(7); 
-
 	list.remove(3);
-
 	list.print();
 
 	return 0;

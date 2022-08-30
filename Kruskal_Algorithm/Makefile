@@ -10,7 +10,7 @@ Target6 = UsefulHeap
 Language = cpp
 
 main: KruskalMain.o $(Target2).o $(Target3).o $(Target4).o $(Target5).o $(Target6).o  
-	$(CC) $(CFLAGS) -o KruskalMain KruskalMain.o $(Target2).o $(Target3).o $(Target4).o $(Target5).o $(Target6).o
+	$(CC) $(CFLAGS) -o main KruskalMain.o $(Target2).o $(Target3).o $(Target4).o $(Target5).o $(Target6).o
  
 main.o: KruskalMain.$(Language) $(Target1).h $(Target2).h $(Target3).h $(Target4).h $(Target5).h $(Target6).h
 	$(CC) $(CFLAGS) -c KruskalMain.$(Language)
@@ -36,3 +36,4 @@ clean:
 	$(RM) $(Target6).o
 	$(RM) KruskalMain.o
 	$(RM) KruskalMain
+	$(RM) KruskalMain.exe

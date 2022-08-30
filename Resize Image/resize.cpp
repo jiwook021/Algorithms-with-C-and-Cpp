@@ -27,11 +27,14 @@ int main(int argc, char *argv[])
     string sOutputfilename = string(argv[2]);    
     int iNewwidth = atoi(argv[3]);
     int iNewheight;
+    if(argc==5)
+    {
+    iNewheight = atoi(argv[4]);
+    }
 
-   
-    ifstream fin(sFilename);
-    fin.open(sFilename);
 
+    ifstream fin(sFilename.c_str(),ios_base::out | ios_base::binary);
+    
     if(!fin.is_open()){
         cout << "Error opening file: " << sFilename << endl;
         return 0;
@@ -39,33 +42,25 @@ int main(int argc, char *argv[])
 
     Image img;  
     Image_init(&img, fin);
-
-    if(argc==5)
-    {
-        iNewheight = atoi(argv[4]);
-    }
-
-     if(argc == 4)
-    {    
-        iNewheight = img.height;
-	}
-
-
     fin.close();
   
-    if(!(0 < iNewwidth && iNewwidth <= MAX_MATRIX_WIDTH) || !(0 < iNewheight && iNewheight <= MAX_MATRIX_HEIGHT))
+    if(!(0 < iNewwidth && iNewwidth <= MAX_MATRIX_WIDTH) 
+    || !(0 < iNewheight && iNewheight <= MAX_MATRIX_HEIGHT))
     {
         cout << "Usage: resize.exe IN_FILENAME OUT_FILENAME WIDTH [HEIGHT]" << endl;
         cout << "WIDTH and HEIGHT must be less than or equal to original" << endl;
+        return 0;
     }
     
-
-
-    ofstream fout(sOutputfilename);     
     seam_carve(&img, iNewwidth, iNewheight);
-    Image_print(&img,fout); 
-    fout.open(sOutputfilename);
 
+
+    ofstream fout(sOutputfilename.c_str(), ios::out | ios::in | ios_base::binary);     
+    Image_print(&img,fout); 
+    
+    fout.open(sOutputfilename.c_str(), ios::out | ios::in | ios_base::binary);
+
+    fin.close();
     fout.close();
    
     return 0; 

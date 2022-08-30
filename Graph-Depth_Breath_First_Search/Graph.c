@@ -47,6 +47,8 @@ void AddEdge(ALGraph *pg, int fromV, int toV)
     LInsert(&(pg->adjList[fromV]),toV);
     LInsert(&(pg->adjList[toV]),fromV);
 
+    printf("Add Edge %c to %c\n",fromV+65, toV+65);
+
     pg->numE += 1;
 }
 
@@ -54,6 +56,7 @@ void ShowGraphEdgeInfo(ALGraph * pg)
 {
     int i,vx;
 
+    printf("Graph Connected INFO\n");
     for(i=0; i <pg ->numV; i++)
     {
         printf("Connected with %c: ", i+65);

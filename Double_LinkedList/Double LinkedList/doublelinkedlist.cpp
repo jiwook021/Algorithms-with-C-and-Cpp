@@ -78,7 +78,7 @@ void LinkedList::search(int data) {
 void LinkedList::print()
 {
 	current = head;
-
+	printf("========Print========\n");
 	for (int i = 0; i < this->size; i++)
 	{ 	
 		std::cout << current->data << std::endl;

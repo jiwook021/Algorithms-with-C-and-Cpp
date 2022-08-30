@@ -5,7 +5,16 @@ int temp;
 int main()
 { 
     int arr [] = {10,7,5,3,4,1,2,6,8,9};  
-    int LEGNTH = sizeof(arr)/sizeof(arr[0]);
+    int LENGTH = sizeof(arr)/sizeof(arr[0]);
+    
+
+    std::cout<<"Before Bubble Sort Array: \n";
+
+    for(int i =0; i <LENGTH; i++)
+    {
+        std::cout<< arr[i] <<" "; 
+    }
+    
     for(int i =0; i<LENGTH-1; i++)
     {
         for(int j=0; j <LENGTH-i-1; j++)
@@ -20,10 +29,11 @@ int main()
         }
     }
 
-    std::cout<<"Array: \n";
+    std::cout<<"\n\nAfter Bubble Sort Array: \n";
     for(int i =0; i <LENGTH; i++)
     {
         std::cout<< arr[i] <<" "; 
-    } 
+    }
+    printf("\n");
     return 0;
 }

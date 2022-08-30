@@ -7,3 +7,4 @@ main:
 clean:
 	$(RM) main.exe
 	$(RM) main.o
+	$(RM) main
