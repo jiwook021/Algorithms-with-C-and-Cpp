@@ -7,7 +7,7 @@ int GetHeight(btreeNode* Binary_Search_Tree)
 {
 	int leftH, rightH;
 
-	if (Binary_Search_Tree == nullptr)
+	if (Binary_Search_Tree == NULL)
 		return 0;
 
 	leftH = GetHeight(Binary_Search_Tree->GetLeftTree());
