@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 #include "Graph.h"
 #include "ArrayBaseStack.h"
@@ -16,7 +17,7 @@ int WhoIsPrecede(int data1, int data2)
 
 
 
-void GraphInit(ALGraph *pg, int nv)
+void GraphInit(ALGraph *pg, uint8_t nv)
 {
     int i;
 

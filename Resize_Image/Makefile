@@ -34,12 +34,5 @@ test3: resize
 	./resize horses.ppm horses300200.ppm 300 200
 	
 
-
-
-
-
-
 clean: 
 	$(RM) *.exe *.out.txt *.out.ppm *.dSYM *.stackdump *.o resize crabster6030.ppm horses300200.ppm dog45.ppm
-
-	

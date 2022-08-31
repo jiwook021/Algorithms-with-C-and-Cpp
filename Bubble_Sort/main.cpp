@@ -27,6 +27,8 @@ int main()
     int temp; 
     clock_t starttime,endtime;
     starttime = clock();
+    
+    
     srand (time(NULL));
     
     int arr [ArrayLength];

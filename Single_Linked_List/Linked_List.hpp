@@ -1,17 +1,17 @@
 #ifndef __LINKED_LIST_H__
 #define __LINKED_LIST_H__
-
+#include <memory>
 
 typedef struct Node {
 	int iData;
-	struct Node* NextNode;
+	std::shared_ptr<Node> NextNode;
 }Node;
 
 typedef struct LinkedList {
 	int size;
-	Node* nCurrent;
-	Node* nTail;
-	Node* nHead;
+	std::shared_ptr<Node> nCurrent;
+	std::shared_ptr<Node> nTail;
+	std::shared_ptr<Node> nHead;
 	LinkedList();
 	void vSearch(int iData);
 	void vInsertion(int iData);

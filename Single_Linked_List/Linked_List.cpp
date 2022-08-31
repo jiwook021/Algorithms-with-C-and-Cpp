@@ -1,7 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include "Linked_List.hpp"
 #include <stdio.h>
 #include <stdlib.h>
+#include <memory>
+#include "Linked_List.hpp"
 
 LinkedList::LinkedList()
 	: nHead(NULL), nTail(NULL), nCurrent(NULL), size(0)
@@ -10,7 +10,8 @@ LinkedList::LinkedList()
 
 void LinkedList::vInsertion(int iData)
 {
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	std::shared_ptr<Node> newNode(new Node());
+
 	newNode->iData = iData;
 	newNode->NextNode = NULL;
 
@@ -30,7 +31,7 @@ void LinkedList::vInsertion(int iData)
 
 void LinkedList::vInsertion(int iData, int iSeq)
 {
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	std::shared_ptr<Node> newNode(new Node());
 	newNode->iData = iData;
 	newNode->NextNode = NULL;
 
@@ -52,7 +53,7 @@ void LinkedList::vRemove(int iData)
 	if (nHead == NULL) return;
 
 	nCurrent = nHead;
-	Node* nPrev = nHead;
+	std::shared_ptr<Node> nPrev = nHead;
 
 	if (!(iData == (nHead->iData)))
 	{
@@ -64,14 +65,15 @@ void LinkedList::vRemove(int iData)
 
 			if (nCurrent == NULL)
 			{
-				printf("Cannot found %d\n", iData);
+				printf("Cannot found %d\t", iData);
 				return;
 			}
 			if (iData == (nCurrent->iData))
 			{
 				nPrev->NextNode = nCurrent->NextNode;
-				free(nCurrent);
+				//free(nCurrent);
 				this->size--;
+				printf("Deleted %d\t", iData);
 				return;
 			}
 
@@ -81,7 +83,7 @@ void LinkedList::vRemove(int iData)
 	else
 	{
 		nHead = nHead->NextNode;
-		free(nPrev);
+		//free(nPrev);
 		this->size--;
 		return;
 	}
@@ -91,12 +93,20 @@ void LinkedList::vRemove(int iData)
 void LinkedList::vSearch(int iData)
 {
 	nCurrent = nHead;
-
+	bool check = false; 
 	for (int i = 0; i < this->size; i++)
 	{
 		if (iData == nCurrent->iData)
-			printf("Found %d\n", iData);
+		{
+			printf("Found %d\t", iData);
+			check = true; 
+			return;
+		}
 		nCurrent = nCurrent->NextNode;
+	}
+	if (check == false)
+	{
+		printf("Can't find %d\t", iData);
 	}
 }
 
@@ -107,7 +117,8 @@ void LinkedList::vPrint()
 
 	for (int i = 0; i < this->size; i++)
 	{
-		printf(("%d\n"), nCurrent->iData);
+		printf(("%d "), nCurrent->iData);
 		nCurrent = nCurrent->NextNode;
 	}
+	printf("\n");
 }
