@@ -39,7 +39,7 @@ test3: resize
 
 
 
-clean:
-	$(RM) *.exe *.out.txt *.out.ppm *.dSYM *.stackdump *.o 
+clean: 
+	$(RM) *.exe *.out.txt *.out.ppm *.dSYM *.stackdump *.o resize crabster6030.ppm horses300200.ppm dog45.ppm
 
 	

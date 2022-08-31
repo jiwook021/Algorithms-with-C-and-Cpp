@@ -11,13 +11,12 @@
 
 #include <vector>
 #include <string>
-/*
  //MODIFIES: v
  //EFFECTS: sorts v
-void sort(std::vector<double>& v);
+void vSort(std::vector<double>& v);
 
 //EFFECTS: extracts one column of data from a tab separated values file (.tsv)
 //  Prints errors to stdout and exits with non-zero status on errors
 std::vector<double> extract_column(std::string filename, std::string column_name);
-*/
+
 #endif

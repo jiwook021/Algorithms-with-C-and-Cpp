@@ -1,4 +1,3 @@
-#pragma once
 /* p1_library.cpp
  *
  * Libraries needed for EECS 280 project 1
@@ -338,7 +337,6 @@ void csvstream::read_header() {
     }
 }
 
-#endif
 /////////////////////////////// END csvstream.h ///////////////////////////////
 
 
@@ -348,12 +346,11 @@ void csvstream::read_header() {
 #include <vector>
 #include <string>
 #include <iostream>
-#include <fstream>
 #include <algorithm>
 using namespace std;
 
 
-void sort(std::vector<double>& v) {
+void vSort(std::vector<double>& v) {
     std::sort(v.begin(), v.end());
 }
 
@@ -397,3 +394,5 @@ std::vector<double> extract_column(std::string filename,
 
     return column_data;
 }
+
+#endif

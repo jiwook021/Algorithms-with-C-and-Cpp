@@ -1,18 +1,34 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include "Circular_doublelinkedlist.h"
 #include <stdio.h>
 #include <stdlib.h>
 
+int random_number()
+{
+	return rand() % 40;
+}
 void example1()
 {
-	insert(1);
-	insert(2);
-	insert(3);
-	insert(4);
-	print();
-	search(4);
-	vRemove(3);
-	print();
+	for(int i=0;i<=15;i++)
+	{
+		vInsert(i);
+	}
+	vPrint();
+	
+	time_t t;
+ 	srand((unsigned) time(&t));	
+	
+	for(int i=0; i<15;i++)
+	{
+		vSearch((random_number()));
+	}
+	
+	
+	for(int i=0;i<=10;i++)
+	{
+		vRemove(random_number());
+	}
+	
+	vPrint();
 
 }
 
@@ -21,10 +37,11 @@ void example2()
 	int iInput, iSelection;
 	while (1)
 	{
+		printf("\n\nInsert Node with 0 or Delete Node with 1 and Number\n");
 		scanf("%d %d", &iSelection, &iInput);
 		if (iSelection == 0)
 		{
-			insert(iInput);
+			vInsert(iInput);
 		}
 		if (iSelection == 1)
 		{
@@ -34,14 +51,13 @@ void example2()
 		{
 			return;
 		}
-		print();
+		vPrint();
 	}
 }
 
 int main()
 {
 	example1();
-	printf("\n\nInsert Node with 0 or Delete Node with 1 and Number\n");
 	example2();
 	return 0;
 }

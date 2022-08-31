@@ -10,10 +10,9 @@ typedef struct Node
 
 Node* head;
 Node* tail;
-Node* current;
 int size;
-void insert(int data);
+void vInsert(int data);
 void vRemove(int data);
-void search(int data);
-void print();
+void vSearch(int data);
+void vPrint();
 #endif 

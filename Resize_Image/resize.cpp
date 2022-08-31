@@ -55,10 +55,12 @@ int main(int argc, char *argv[])
     seam_carve(&img, iNewwidth, iNewheight);
 
 
-    ofstream fout(sOutputfilename.c_str(), ios::out | ios::in | ios_base::binary);     
+    ofstream fout(sOutputfilename.c_str());     
+    
     Image_print(&img,fout); 
     
     fout.open(sOutputfilename.c_str(), ios::out | ios::in | ios_base::binary);
+
 
     fin.close();
     fout.close();

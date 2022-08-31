@@ -11,12 +11,10 @@
 // EFFECTS:  Initializes the Image with the given width and height.
 // NOTE:     Do NOT use new or delete here.
 void Image_init(Image* img, int width, int height) {
-  //assert(0 < width && width <= MAX_MATRIX_WIDTH);
-  //assert(0 < height && height <= MAX_MATRIX_HEIGHT);
-
+  assert(0 < width && width <= MAX_MATRIX_WIDTH);
+  assert(0 < height && height <= MAX_MATRIX_HEIGHT);
   img->width = width;
   img->height = height;
-
   Matrix_init(&img->red_channel, width, height);
   Matrix_init(&img->green_channel, width, height);
   Matrix_init(&img->blue_channel, width, height);
@@ -32,12 +30,10 @@ void Image_init(Image* img, int width, int height) {
 // NOTE:     Do NOT use new or delete here.
 void Image_init(Image* img, std::istream& is) {
   std::string trash = "";
-
   is >> trash;
   is >> img->width;
   is >> img->height;
   is >> trash;
-
   Matrix_init(&img->red_channel, img->width, img->height);
   Matrix_init(&img->green_channel, img->width, img->height);
   Matrix_init(&img->blue_channel, img->width, img->height);

@@ -1,13 +1,17 @@
 #include "doublelinkedlist.hpp"
 #include <cstdlib>
 #include <iostream>
+#include <memory>
 
 LinkedList::LinkedList()
 	: head(nullptr), tail(nullptr), current(nullptr), size(0)
 { }
 
 void LinkedList::insert(int data) {
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	
+	std::shared_ptr<Node> newNode(new Node());
+
+
 	newNode->data = data;
 	newNode->next = nullptr;
 	newNode->previous = nullptr;
@@ -29,7 +33,8 @@ void LinkedList::insert(int data) {
 
 void LinkedList::insert(int data, int seq)
 {
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	std::shared_ptr<Node> newNode(new Node());
+	
 	newNode->data = data;
 	newNode->next = nullptr;
 
@@ -52,37 +57,64 @@ void LinkedList::insert(int data, int seq)
 
 void LinkedList::remove(int data) {
 
+	if(check(data) == true) 
+	{ 
 	current = head;
-
-	for (int i = 0; i < this->size; i++)
+	for (int i = 1; i <= this->size; i++)
 	{ 
 		current = current->next;	
 		if (data == current->data) break; 
 	}
 	current->previous->next = current->next;
 	current->next->previous = current->previous; 
-	std::cout<<"Remove " << data <<std::endl;
-	free(current);
+	std::cout<<"\nRemove " << data <<std::endl;
+	//delete current;
+
+	this->size--; 
+	}
+	else 
+	{
+		printf("\nfailed to delete %d since its not available\n",data);
+		return;
+	}
 }
-void LinkedList::search(int data) {
+bool LinkedList::check(int data) {
+	current = head;
+	for (int i = 0; i < this->size; i++)
+	{
+		if (data == current->data) 
+		{
+			return true;
+		}
+		current = current->next;
+	}
+	return false;
+}
+
+bool LinkedList::search(int data) {
 	current = head;
 
 	for (int i = 0; i < this->size; i++)
 	{
-		if (data == current->data) std::cout << "found :" << data << std::endl;
+		if (data == current->data) 
+		{
+			std::cout << "found :" << data << std::endl;
+			return true;
+		}
 		current = current->next;
+		
 	}
-	this->size--; 
+	return false;
 }
 
 void LinkedList::print()
 {
 	current = head;
-	printf("========Print========\n");
+	printf("\n==============Print==============\n");
 	for (int i = 0; i < this->size; i++)
 	{ 	
-		std::cout << current->data << std::endl;
+		std::cout << current->data << " ";
 		current = current->next;
 	}
-	printf("=====================\n");
+	printf("\n=================================\n");
 }

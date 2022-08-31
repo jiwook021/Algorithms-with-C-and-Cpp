@@ -1,20 +1,38 @@
 #include <iostream>
 #include <cstdio>
+#include <memory>
 #include "doublelinkedlist.hpp"
+
+int random_number()
+{
+	return rand() % 9+1;
+}
 
 int main()
 {
+	time_t t;
+ 	srand((unsigned) time(&t));	
 	LinkedList list;
 
-	list.insert(1);
-	list.insert(2);
-	list.insert(3);
-	list.insert(4);
-	list.insert(5, 3);
+	for (int i=0;i<10;i++)
+	{
+	list.insert(random_number());
+	}
+	for (int i=0;i<10;i++)
+	{
+	list.insert(random_number(), random_number());
+	}
 	list.print();
-	list.search(7); 
-	list.remove(3);
+	for (int i=0;i<10;i++)
+	{
+	list.search(random_number());
+	}
 	list.print();
 
+	for (int i=0;i<3;i++)
+	{
+	list.remove(random_number());
+	}	
+	list.print();
 	return 0;
 }
