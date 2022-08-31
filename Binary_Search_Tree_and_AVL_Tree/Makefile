@@ -16,7 +16,7 @@ main.o: $(main).$(Language) $(Target1).hpp $(Target2).hpp $(Target3).hpp
 $(Target1).o: $(Target1).hpp $(Target2).hpp $(Target3).hpp
 $(Target2).o: $(Target2).hpp $(Target2).hpp
 $(Target3).o: $(Target3).hpp
-  
+
 clean:
 	$(RM) $(Target)
 	$(RM) $(Target2)

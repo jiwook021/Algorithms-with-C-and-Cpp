@@ -1,9 +1,8 @@
 CC = gcc
-CFLAGS  = -g
+CFLAGS= -g -Wall
 Language = c
 
 Target1 = Circular_doublelinkedlist
-
 
 main: main.o $(Target1).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o 

@@ -37,14 +37,12 @@ void testBFS()
     ShowGraphEdgeInfo(&graph);
     printf("==========BFS==========\n");
     BFShowGraphVertex(&graph,A);
-
     GraphDestory(&graph);
 }
 
 int main()
 {
     testBFS();
-
     printf("\n\n\n");
     testDFS();
     printf("\n\n");

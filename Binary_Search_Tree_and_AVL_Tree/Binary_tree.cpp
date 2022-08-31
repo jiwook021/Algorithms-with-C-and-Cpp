@@ -75,7 +75,6 @@ void btreeNode::ChangeRightTree(btreeNode* sub)
 	right = sub; 
 }
 
-
 void Travelinorder(btreeNode * root)
 {
 	if (root == nullptr)
@@ -108,4 +107,3 @@ void Travelpostorder(btreeNode* root)
 	Travelinorder(root->GetRightTree());
 	std::cout << root->GetData() << " ";
 }
-
