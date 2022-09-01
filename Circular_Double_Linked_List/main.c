@@ -4,11 +4,11 @@
 
 int random_number()
 {
-	return rand() % 40;
+	return rand() % 15;
 }
 void example1()
 {
-	for(int i=0;i<=15;i++)
+	for(int i=0;i<=10;i++)
 	{
 		vInsert(i);
 	}
