@@ -8,24 +8,24 @@ using namespace std;
 
 class Person {
 public:
- Person(const char *n = " ", int a = 0) {
-    name = strdup(n);
-    age = a;
- }
- bool operator==(const Person& p) const {
-    return strcmp(name,p.name) == 0;
- }
- bool operator<(const Person& p) const {
-    return strcmp(name,p.name) < 0;
- }
+    Person(const char *n = " ", int a = 0) {
+        name = strdup(n);
+        age = a;
+    }
+    bool operator==(const Person& p) const {
+        return strcmp(name,p.name) == 0;
+    }
+    bool operator<(const Person& p) const {
+        return strcmp(name,p.name) < 0;
+    }
 
 private:
     char *name;
     int age;
     friend ostream& operator<< (ostream& out, const Person& p) 
     {
-    out << "(" << p.name << "," << p.age << ")";
-    return out;
+        out << "(" << p.name << "," << p.age << ")";
+        return out;
     }
 };
 
@@ -35,7 +35,6 @@ bool f1(int n) {
 
 template<class T>
 void printVector(const char *s, const vector<T>& v) {
-     
     if (v.size() == 0) {
     return;
     }
