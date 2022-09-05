@@ -81,6 +81,7 @@
         "ratio": "cpp",
         "shared_mutex": "cpp",
         "stop_token": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "*.ipp": "cpp"
     }
 }
