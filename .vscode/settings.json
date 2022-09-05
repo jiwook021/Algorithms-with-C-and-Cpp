@@ -80,6 +80,7 @@
         "condition_variable": "cpp",
         "ratio": "cpp",
         "shared_mutex": "cpp",
-        "stop_token": "cpp"
+        "stop_token": "cpp",
+        "list": "cpp"
     }
 }
