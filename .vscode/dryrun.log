@@ -1,7 +1,6 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: Entering directory `g:/�� ����̺�/Data_Structure-Algorithm_with_C'
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/jiwook/Data-Structure-and-Algorithm-with-C-'
+make: Leaving directory '/home/jiwook/Data-Structure-and-Algorithm-with-C-'
  
-make.exe: *** Ÿ���� �������� �ʾҰ� ����ũ������ �����ϴ�.  ����.
+make: *** No targets specified and no makefile found.  Stop.
 
-make.exe: Leaving directory `g:/�� ����̺�/Data_Structure-Algorithm_with_C'
- 

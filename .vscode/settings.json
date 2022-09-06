@@ -82,6 +82,8 @@
         "shared_mutex": "cpp",
         "stop_token": "cpp",
         "list": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "set": "cpp",
+        "thread": "cpp"
     }
 }

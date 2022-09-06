@@ -1,290 +1,210 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
 
-# This program built for i386-pc-mingw32
- 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-# ����ũ ����Ÿ���̽�, Thu Aug 18 18:05:17 2022
-�� ǥ��
-# ����
+# Make data base, printed on Tue Sep  6 17:41:50 2022
 
-# �ڵ�
+# Variables
+
+# automatic
 <D = $(patsubst %/,%,$(dir $<))
-# �ڵ�
+# automatic
 ?F = $(notdir $?)
-# ����ũ����
-MAKEFLAGS = Rrqp
-# �ڵ�
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# �ڵ�
+# automatic
 @D = $(patsubst %/,%,$(dir $@))
-# ȯ��
-HOMEDRIVE = C:
-# �ڵ�
+# automatic
 @F = $(notdir $@)
-# �ڵ�
-^D = $(patsubst %/,%,$(dir $^))
-# ����ũ����
-CURDIR := g:/�� ����̺�/Data_Structure-Algorithm_with_C
-# �⺻��
-SHELL := sh.exe
-# ȯ��
-WINDIR = C:\WINDOWS
-# ȯ��
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"2dff5cff996ed6cbe8d8aa8740f86aa0.ko","_translationsConfigFile":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\2dff5cff996ed6cbe8d8aa8740f86aa0.ko\\tcf.json","_cacheRoot":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\2dff5cff996ed6cbe8d8aa8740f86aa0.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\2dff5cff996ed6cbe8d8aa8740f86aa0.ko\\3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"C:\\Users\\jiwoo\\AppData\\Roaming\\Code\\clp\\2dff5cff996ed6cbe8d8aa8740f86aa0.ko\\corrupted.info","_languagePackSupport":true}
-# ȯ��
-ONEDRIVE = C:\Users\jiwoo\OneDrive
-# ȯ��
-XILINXD_LICENSE_FILE = \\192.168.0.111\Vivado_License\Xilinx.lic;2100@192.168.0.111;2100@DESKTOP=DOMGSRH;
-# ȯ��
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# ����ũ����
+# makefile
+CURDIR := /home/jiwook/Data-Structure-and-Algorithm-with-C-
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"5c0954b80d30264ef28a0686423ee0d7.ko","_translationsConfigFile":"/home/jiwook/.vscode-server/data/clp/5c0954b80d30264ef28a0686423ee0d7.ko/tcf.json","_cacheRoot":"/home/jiwook/.vscode-server/data/clp/5c0954b80d30264ef28a0686423ee0d7.ko","_resolvedLanguagePackCoreLocation":"/home/jiwook/.vscode-server/data/clp/5c0954b80d30264ef28a0686423ee0d7.ko/784b0177c56c607789f9638da7b6bf3230d47a8c","_corruptedFile":"/home/jiwook/.vscode-server/data/clp/5c0954b80d30264ef28a0686423ee0d7.ko/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /home/jiwook/.vscode-server/bin/784b0177c56c607789f9638da7b6bf3230d47a8c/node
+# makefile
 MAKEFILE_LIST := 
-# ȯ��
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# ȯ��
-TMP = C:\Users\jiwoo\AppData\Local\Temp
-# ȯ��
-PROGRAMW6432 = C:\Program Files
-# ȯ��
-PROGRAMDATA = C:\ProgramData
-# ȯ��
-VSCODE_CWD = C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code
-# ȯ��
-PATH = D:\Programs\vmware\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Python34;C:\mingw\bin;C:\msys64\mingw32\bin;C:\Program Files\CMake\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Bandizip\;C:\Program Files\Docker\Docker\resources\bin;C:\Progra 
-make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
-
-mData\DockerDesktop\version-bin;C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps;C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin;D:\Anaconda;D:\Anaconda\Library;D:\Anaconda\Scripts;
-# ȯ��
-LM_LICENSE_FILE = \\192.168.0.111\Vivado_License\Xilinx.lic;\2100@DESKTOP=DOMGSRH;2100@192.168.0.111;
-# ȯ��
-COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# ȯ��
-ZES_ENABLE_SYSMAN = 1
-# ȯ��
-PROCESSOR_ARCHITECTURE = x86
-# ȯ��
-USERPROFILE = C:\Users\jiwoo
-# ȯ��
-ALLUSERSPROFILE = C:\ProgramData
-# ȯ��
-NUMBER_OF_PROCESSORS = 12
-# ȯ��
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/c/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/jiwook/.vscode-server/bin/784b0177c56c607789f9638da7b6bf3230d47a8c/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/d/Programs/vmware/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Python34:/mnt/c/mingw/bin:/mnt/c/msys64/mingw32/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/jiwoo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jiwoo/AppData/Local/GitHubDesktop/bin:/mnt/d/Anaconda:/mnt/d/Anaconda/Library:/mnt/d/Anaconda/Scripts:/snap/bin
+# environment
 ELECTRON_RUN_AS_NODE = 1
-# �⺻��
-.FEATURES := target-specific order-only second-expansion else-if archives
-# �ڵ�
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-25e22d19-ddf1-4f1b-8127-b088678eb7af.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
 %F = $(notdir $%)
-# ȯ��
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15716_YIXJYFRHVOBRRZBT
-# ȯ��
-COMPUTERNAME = DESKTOP-9NPK4EB
-# ȯ��
-PROGRAMFILES = C:\Program Files (x86)
-# ȯ��
-DRIVERDATA = C:\Windows\System32\Drivers\DriverData
-# ȯ��
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# ȯ��
-USERNAME = jiwoo
-# ȯ��
-PUBLIC = C:\Users\Public
-# ȯ��
+# environment
+PWD = /home/jiwook/Data-Structure-and-Algorithm-with-C-
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/14818_interop
+# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# ȯ��
-VSCODE_CODE_CACHE_PATH = C:\Users\jiwoo\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
-# ȯ��
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# ȯ��
-COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
-# ȯ��
-LOGONSERVER = \\DESKTOP-9NPK4EB
-# ȯ��
-ONEDRIVECONSUMER = C:\Users\jiwoo\OneDrive
-# ȯ��
+# environment
+HOME = /home/jiwook
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = jiwook
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# ȯ��
-USERDOMAIN = DESKTOP-9NPK4EB
-# �⺻��
-MAKE = $(MAKE_COMMAND)
-# �⺻��
-MAKECMDGOALS := all
-# �⺻��
-MAKE_VERSION := 3.81
-# ����ũ����
-.DEFAULT_GOAL := 
-# ȯ��
-PROGRAMFILES(X86) = C:\Program Files (x86)
-# �ڵ�
-%D = $(patsubst %/,%,$(dir $%))
-# ȯ��
-LOCALAPPDATA = C:\Users\jiwoo\AppData\Local
-# ȯ��
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
-# �⺻��
-MAKE_COMMAND := make.exe
-# ȯ��
-PROCESSOR_ARCHITEW6432 = AMD64
-# �⺻��
-.VARIABLES := 
-# �ڵ�
-*F = $(notdir $*)
-# ȯ��
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
-# ȯ��
-OS = Windows_NT
-# ȯ��
-VSCODE_IPC_HOOK = \\.\pipe\62f130cc4ea086a017a8edfe7070e9c2-1.69.2-main-sock
-# ȯ��
-HOMEPATH = \Users\jiwoo
-# ȯ��
-COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
-# ȯ��
-PROMPT = $P$G
-# ȯ��
-MFLAGS = -Rrqp
-# �ڵ�
-*D = $(patsubst %/,%,$(dir $*))
-# ȯ��
-SYSTEMROOT = C:\WINDOWS
-# �ڵ�
-+D = $(patsubst %/,%,$(dir $+))
-# �ڵ�
-+F = $(notdir $+)
-# ȯ��
-APPDATA = C:\Users\jiwoo\AppData\Roaming
-# ȯ��
-TEMP = C:\Users\jiwoo\AppData\Local\Temp
-# ȯ��
-COMSPEC = C:\WINDOWS\system32\cmd.exe
-# �⺻��
-MAKEFILES := 
-# �ڵ�
-<F = $(notdir $<)
-# ȯ��
-LC_ALL = C
-# �ڵ�
-^F = $(notdir $^)
-# �⺻��
-SUFFIXES := 
-# ȯ��
-SYSTEMDRIVE = C:
-# ȯ��
-SESSIONNAME = Console
-# ȯ��
-PROCESSOR_REVISION = 9e0a
-# ȯ��
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
 MAKELEVEL := 0
-# ȯ��
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = jiwook
+# makefile
+.DEFAULT_GOAL := 
+# environment
+NAME = DESKTOP-9NPK4EB
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/jiwoo/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
 LANG = C
-# ȯ��
-PROCESSOR_LEVEL = 6
-# ȯ��
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# ȯ��
-VSCODE_PID = 15716
-# ȯ��
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-9NPK4EB
+# environment
+TERM = xterm-256color
+# environment
+WSL_DISTRO_NAME = Ubuntu
 # variable set hash-table stats:
-# Load=87/1024=8%, Rehash=0, Collisions=9/104=9%
+# Load=63/1024=6%, Rehash=0, Collisions=4/85=5%
 
 # Pattern-specific Variable Values
 
-# ������ ���� ���� ������ �����ϴ�.
+# No pattern-specific variable values.
 
-# ���丮
+# Directories
 
-# C:\Program Files\Bandizip\ (Ű C:/Program Files/Bandizip/, ����ð� 1653043852): 20 ����, 0�� �Ұ���.
-# C:\Program Files\Docker\Docker\resources\bin (Ű C:/Program Files/Docker/Docker/resources/bin, ����ð� 1654161131): 13 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (Ű C:/WINDOWS/System32/WindowsPowerShell/v1.0/, ����ð� 1643358952): 31 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\Wbem (Ű C:/WINDOWS/System32/Wbem, ����ð� 1658066664): 170 ����, 0�� �Ұ���.
-# . (Ű g:/�� ����̺�/Data_Structure-Algorithm_with_C, ����ð� 1659084646): 34 ����, 0�� �Ұ���.
-# C:\msys64\mingw32\bin (Ű C:/msys64/mingw32/bin, ����ð� 1644198235): 2 ����, 0�� �Ұ���.
-# C:\Program Files\TortoiseSVN\bin (Ű C:/Program Files/TortoiseSVN/bin, ����ð� 1645672799): 64 ����, 0�� �Ұ���.
-# D:\Anaconda\Library (Ű D:/Anaconda/Library, ����ð� 1658902888): 21 ����, 0�� �Ұ���.
-# C:\mingw\bin (Ű C:/mingw/bin, ����ð� 1643335684): 73 ����, 0�� �Ұ���.
-# C:\WINDOWS\System32\OpenSSH\: stat�� �� �� �������ϴ�.
-# C:\Program Files\PuTTY\ (Ű C:/Program Files/PuTTY/, ����ð� 1642485510): 12 ����, 0�� �Ұ���.
-# D:\Programs\vmware\bin\ (Ű D:/Programs/vmware/bin/, ����ð� 1652927609): 4 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\Programs\Microsoft VS Code\bin (Ű C:/Users/jiwoo/AppData/Local/Programs/Microsoft VS Code/bin, ����ð� 1658544870): 4 ����, 0�� �Ұ���.
-# C:\WINDOWS (Ű C:/WINDOWS, ����ð� 1660421375): 115 ����, 0�� �Ұ���.
-# D:\Anaconda (Ű D:/Anaconda, ����ð� 1658903084): 89 ����, 0�� �Ұ���.
-# C:\Python34: stat�� �� �� �������ϴ�.
-# D:\Anaconda\Scripts (Ű D:/Anaconda/Scripts, ����ð� 1658902964): 354 ����, 0�� �Ұ���.
-# C:\ProgramData\DockerDesktop\version-bin: stat�� �� �� �������ϴ�.
-# C:\Program Files\Git\cmd (Ű C:/Program Files/Git/cmd, ����ð� 1644199690): 8 ����, 0�� �Ұ���.
-# C:\WINDOWS\system32 (Ű C:/WINDOWS/system32, ����ð� 1660711262): 2949 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\GitHubDesktop\bin (Ű C:/Users/jiwoo/AppData/Local/GitHubDesktop/bin, ����ð� 1642487105): 4 ����, 0�� �Ұ���.
-# C:\Users\jiwoo\AppData\Local\Microsoft\WindowsApps (Ű C:/Users/jiwoo/AppData/Local/Microsoft/WindowsApps, ����ð� 1652875691): 30 ����, 0�� �Ұ���.
-# C:\Program Files\CMake\bin (Ű C:/Program Files/CMake/bin, ����ð� 1644199504): 7 ����, 0�� �Ұ���.
-# C:\Program Files (x86)\GnuWin32\bin (Ű C:/Program Files (x86)/GnuWin32/bin, ����ð� 1644564198): 5 ����, 0�� �Ұ���.
+# . (device 2064, inode 2692): 55 files, no impossibilities.
 
-# 4009 ����, 0�� impossibilities in 24 directories.
+# 55 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-# ������ ��Ģ ����.
+# No implicit rules.
 
-# ����
+# Files
 
-# Ÿ���� �ƴ�:
+# Not a target:
 all:
-#  ������ Ÿ��.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
 
-# Ÿ���� �ƴ�:
-.DEFAULT:
-#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
-#  ���� �ð��� ���� �˻���� �ʾ���.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
-# Ÿ���� �ƴ�:
+# Not a target:
 makefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵǾ����ϴ�.
-#  ���ſ� ������.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
-# Ÿ���� �ƴ�:
-.SUFFIXES:
-#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
-#  ���� �ð��� ���� �˻���� �ʾ���.
-#  ������ ���ŵ��� �ʾҽ��ϴ�.
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-# Ÿ���� �ƴ�:
+# Not a target:
 GNUmakefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
-#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
-#  ������ �������� �ʽ��ϴ�.
-#  ������ ���ŵǾ����ϴ�.
-#  ���ſ� ������.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
-# VPATH Ž�� ���
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
 
-# `vpath' Ž�� ��ΰ� ����.
+# No 'vpath' search paths.
 
-# �Ϲ����� (`VPATH' ����) Ž�� ��ΰ� ����.
+# No general ('VPATH' variable) search path.
 
-# # of strings in strcache: 0
-# # of strcache buffers: 0
-# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
-# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache buffers: 1 (0) / strings = 63 / storage = 874 B / avg = 13 B
+# current buf: size = 8162 B / used = 874 B / count = 63 / avg = 13 B
 
-# ����ũ ����Ÿ ���̽� ��ħ, Thu Aug 18 18:05:17 2022
-����
+# strcache performance: lookups = 66 / hit rate = 4%
+# hash-table stats:
+# Load=63/8192=1%, Rehash=0, Collisions=1/66=2%
+# Finished Make data base on Tue Sep  6 17:41:50 2022
+
  
