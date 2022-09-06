@@ -49,14 +49,13 @@ void test()
     
     std::thread t2(hello3);
     
-    std::thread t3(hello4);
+    std::thread t3;
     
     std::thread t4(hello5);
 
     std::thread t5 = std::move(t4);
 
     t3 = std::move(t2);
-    t1 = std::move(t3);
     
 
     t.join();
