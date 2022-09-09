@@ -7,40 +7,45 @@
 
 using namespace std;
 
-class Variable {
+class Variable 
+{
+
 public:
     char id;
     int exp;
-    Variable() { // required by <vector>;
+    Variable() {} // required by <vector>;
+    Variable(char c, int i) 
+    {
+        id = c; exp = i;
     }
-    Variable(char c, int i) {
-    id = c; exp = i;
+    bool operator== (const Variable& v) const 
+    {
+        return id == v.id && exp == v.exp;
     }
-    bool operator== (const Variable& v) const {
-    return id == v.id && exp == v.exp;
-    }
-    bool operator< (const Variable& v) const { // used by sort();
-    return id < v.id;
+    bool operator< (const Variable& v) const // used by sort();
+    { 
+        return id < v.id;
     }
 };
 
 class Term {
 public:
-    Term() {
-    coeff = 0;
-    }
+    Term() { coeff = 0;}
     int coeff;
     vector<Variable> vars;
     bool operator== (const Term&) const;
-    bool operator!= (const Term& term) const { // required by <list>
-    return !(*this == term);
+    bool operator!= (const Term& term) const // required by <list>
+    { 
+        return !(*this == term);
     }
     bool operator< (const Term&) const;
-    bool operator> (const Term& term) const { // required by <list>
-    return *this != term && (*this < term);
+    bool operator> (const Term& term) const // required by <list>
+    { 
+        return *this != term && (*this < term);
     }
-    int min(int n, int m) const {
-    return (n < m) ? n : m;
+    int min(int n, int m) const 
+    {
+        return (n < m) ? n : m;
     }
 };
 
@@ -48,8 +53,10 @@ class Polynomial {
 public:
     Polynomial() {}
     Polynomial operator+ (const Polynomial&) const;
-    void error(char *s) {
-    cerr << s << endl; exit(1);
+    void error(char *s) 
+    {
+        std::cerr << s << endl; 
+        exit(1);
     }
 private:
     list<Term> terms;
@@ -61,29 +68,39 @@ private:
 // the first cell of the node containing a term is excluded
 // from comparison, since it stores coefficient of the term;
 
-bool Term::operator== (const Term& term) const {
-    for (int i = 0; i < min(vars.size(),term.vars.size()) && vars[i] == term.vars[i]; i++){
+bool Term::operator== (const Term& term) const 
+{
+    for (int i = 0; i < min(vars.size(),term.vars.size()) && vars[i] == term.vars[i]; i++)
+    {
         return i == vars.size() && vars.size() == term.vars.size();
     }
 }
 
 bool Term::operator< (const Term& term2) const { // used by sort();
     if (vars.size() == 0)
-       return false; // *this is just a coefficient;
+    {
+       return false; // *this is just a coefficient;   
+    }
     else if (term2.vars.size() == 0)
+    {
         return true; // term2 is just a coefficient;
+    }
     for (int i = 0; i < min(vars.size(),term2.vars.size()); i++)
     {
-        if (vars[i].id < term2.vars[i].id){
-            return true;  // *this precedes term2;
-            }
-        else if (term2.vars[i].id < vars[i].id){
+        if (vars[i].id < term2.vars[i].id)
+        {
+                return true;  // *this precedes term2;
+        }
+        else if (term2.vars[i].id < vars[i].id)
+        {
             return false; // term2 precedes *this;
         }
-        else if (vars[i].exp < term2.vars[i].exp) {
+        else if (vars[i].exp < term2.vars[i].exp) 
+        {
             return true; // *this precedes term2;
         }
-        else if (term2.vars[i].exp < vars[i].exp){
+        else if (term2.vars[i].exp < vars[i].exp)
+        {
             return false; // term2 precedes *this;
         }
         return ((int)vars.size()-(int)term2.vars.size() < 0) ? true : false;
@@ -94,29 +111,32 @@ Polynomial Polynomial::operator+ (const Polynomial& polyn2) const {
     list<Term>::iterator p2;
     bool erased;
     
-    for (auto p1 = terms.begin(); p1 != terms.end(); p1++) {// create a new polyn from copies of *this
+    for (auto p1 = terms.begin(); p1 != terms.end(); p1++)  // create a new polyn from copies of *this
+    {
         result.terms.push_back(*p1); 
     }
     
-    
-    for (auto p1 = polyn2.terms.begin(); p1 != polyn2.terms.end(); p1++){
-    result.terms.push_back(*p1); // and polyn2;
+    for (auto p1 = polyn2.terms.begin(); p1 != polyn2.terms.end(); p1++)
+    {
+        result.terms.push_back(*p1); // and polyn2;
     }
 
     for (auto p1 = result.terms.begin(); p1 != result.terms.end(); ) 
     {
         for (p2 = p1, p2++, erased = false; p2 != result.terms.end(); p2++)
-            if (*p1 == *p2) { // if two terms are equal (except
+            if (*p1 == *p2) 
+            { // if two terms are equal (except
                 p1->coeff += p2->coeff; // for the coefficient), add the
                 result.terms.erase(p2); // two coefficients and erase
-            if (p1->coeff == 0) // a redundant term; if the
-            {
-                result.terms.erase(p1); // coefficient in retained
+                if (p1->coeff == 0) // a redundant term; if the
+                {
+                    result.terms.erase(p1); // coefficient in retained
+                }
+                erased = true; // term is zero, break;	
+                            // erase the term as well;
             }
-            erased = true; // term is zero, break;	
-            // erase the term as well;
-            }
-        if (erased){ // restart processing from the beginning
+        if (erased) // restart processing from the beginning
+        { 
             p1 = result.terms.begin(); // if any node was erased;
         }
         else 
@@ -144,8 +164,8 @@ istream& operator>> (istream& in, Polynomial& polyn)
         }    
         sign = 1;
     
-        while (ch == '-' || ch == '+') 
-        { // first get sign(s) of Term
+        while (ch == '-' || ch == '+') // first get sign(s) of Term
+        { 
             if (ch == '-')
             {
                 sign *= -1;
@@ -157,8 +177,8 @@ istream& operator>> (istream& in, Polynomial& polyn)
             }
         }
         
-        if (isdigit(ch)) 
-        { // and then its coefficient;
+        if (isdigit(ch)) // and then its coefficient; 
+        { 
             in.putback(ch);
             in >> term.coeff;
             ch = in.get();
@@ -206,7 +226,6 @@ istream& operator>> (istream& in, Polynomial& polyn)
         {
             polyn.error("wrong character entered");    
         }
-    
     }
     for (list<Term>::iterator i = polyn.terms.begin(); i != polyn.terms.end(); i++)
     {
@@ -258,7 +277,9 @@ ostream& operator<< (ostream& out, const Polynomial& polyn)
     out << endl;
     return out;
 }
-int main() {
+
+int main() 
+{
     Polynomial polyn1, polyn2;
     cout << "Enter two polynomials, each ended with a semicolon:\n";
     cin  >> polyn1 >> polyn2;
