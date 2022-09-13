@@ -4,6 +4,8 @@ Language = cpp
 
 main:
 	$(CC) $(CFLAGS) main.$(Language) -o main 
+	$(CC) $(CFLAGS) sort.$(Language) -o sort
 clean:
 	$(RM) main
+	$(RM) sort
 	
