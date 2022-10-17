@@ -84,6 +84,7 @@
         "list": "cpp",
         "*.ipp": "cpp",
         "set": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "stdint.h": "c"
     }
 }

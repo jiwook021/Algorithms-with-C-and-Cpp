@@ -1,6 +1,6 @@
-CC = gcc
+CC = g++
 CFLAGS  = -g -Wall
-Language = c -lm
+Language = cpp
 
 main:
 	$(CC) $(CFLAGS) main.$(Language) -o main
