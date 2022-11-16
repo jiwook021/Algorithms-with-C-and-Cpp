@@ -11,16 +11,15 @@ int main()
     
 	for(uint8_t i =0; i < size; i++)
     {
-         enqueue(rand() % 10 + 1);
-		 printf("Peek: %d  ", peek());
+        enqueue(rand() % 10 + 1);
+		printf("Peek:%d  \n", peek());
     }
-	
 	printf("\n");
 
-	for(uint8_t i =0; i < size/4; i++)
+	for(uint8_t i =0; i < size-1; i++)
     {
-	printf("dequeue: %d\n", dequeue());
-	printf("Peek: %d  ", peek());
+		printf("dequeue: %d\t", dequeue());
+		printf("Peek: %d  \n", peek());
 	}
 
 	printf("\n");

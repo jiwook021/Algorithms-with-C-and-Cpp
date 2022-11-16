@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+static Node* front;
+static Node* rear;
+
 bool QisEmpty()
 {
 	if (front == NULL && rear == NULL)
@@ -29,13 +32,13 @@ void enqueue(int Data)
 		rear->next = node;
 		rear = node;
 	}
-	printf("Enque: %d\n", Data);
+	printf("Enque: %d\t", Data);
 }
 
 int dequeue()
 {
 	Node* deletenode = front;
-	int number = front->data;
+	int number = front->data;  //node->data, *(node).data;
 	front = front->next;
 	free(deletenode);
 	return number;
