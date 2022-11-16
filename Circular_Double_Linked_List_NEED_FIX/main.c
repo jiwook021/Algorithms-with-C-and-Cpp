@@ -4,11 +4,18 @@
 
 int random_number()
 {
-	return rand() % 15;
+	return rand() % 20;
 }
+
+int idelete_random_number()
+{
+	return rand() % 10;
+}
+
+
 void example1()
 {
-	for(int i=0;i<=10;i++)
+	for(int i=0;i<=15;i++)
 	{
 		vInsert(i);
 	}
@@ -25,7 +32,7 @@ void example1()
 	
 	for(int i=0;i<=10;i++)
 	{
-		vRemove(random_number());
+		vRemove(idelete_random_number());
 	}
 	
 	vPrint();

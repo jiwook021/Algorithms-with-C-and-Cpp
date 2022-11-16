@@ -7,8 +7,6 @@ typedef struct Node
 	int data;
 	struct Node* next;
 } Node;
-Node* front;
-Node* rear;
 
 bool QisEmpty();
 void enqueue(int data);

@@ -16,23 +16,28 @@ int main()
 
 	for (int i=0;i<10;i++)
 	{
-	list.insert(random_number());
+  	list.insert(random_number());
 	}
+	
 	for (int i=0;i<10;i++)
 	{
-	list.insert(random_number(), random_number());
+		list.insert(random_number(), random_number());
 	}
+	
 	list.print();
+	
 	for (int i=0;i<10;i++)
 	{
-	list.search(random_number());
+		list.search(random_number());
 	}
+
 	list.print();
 
 	for (int i=0;i<3;i++)
 	{
-	list.remove(random_number());
+		list.remove(random_number());
 	}	
+
 	list.print();
 	return 0;
 }

@@ -85,6 +85,13 @@
         "*.ipp": "cpp",
         "set": "cpp",
         "thread": "cpp",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "forward_list": "c",
+        "strstream": "cpp",
+        "complex": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp"
     }
 }

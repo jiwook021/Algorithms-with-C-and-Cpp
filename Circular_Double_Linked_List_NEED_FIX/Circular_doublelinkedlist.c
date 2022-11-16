@@ -31,7 +31,7 @@ void vInsert(int data) {
 		newNode->next = head;
 		
 	}
-	printf("Inserted %d on head     ",newNode->data);
+	printf("Inserted %d on head\t",newNode->data);
 	size++; //add size
 }
 
@@ -52,6 +52,7 @@ void vRemove(int data)
 				printf("Cannot found %d\n", data);
 				return;
 			}
+			
 			if (data == current->data)
 			{
 				current->previous->next = current->next;
@@ -79,24 +80,26 @@ void vSearch(int data)
 {
 	uint8_t check = 0; 
 	Node* current = head;
+
 	if (current == NULL)
 	{
 		printf("\nEmpty List\n");
 	}
+
 	int i;
 	for (i = 0; i < size; i++)
 	{
 		current = current->next;
-
 		if (data == current->data) 
 		{
 			printf("found :%d\n", current->data);
 			check = 1;
 		}
 	}
-	if(check == 0)
+
+	if (check == 0)
 	{
-	printf("Did not Found :%d\n", data);
+		printf("Did not Found :%d\n", data);
 	}
 }
 

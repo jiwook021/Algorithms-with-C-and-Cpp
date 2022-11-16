@@ -33,5 +33,15 @@ int main()
 	else
 		printf("\nSucessfully Found key: %d \n", BSTGetNodeData(sNode));
 
+	
+	std::cout<<"\n\nSearching for 21 Using Binaray Search Tree"<<std::endl;
+
+	sNode = BSTSearch(avlRoot, 21);
+
+	if (sNode == nullptr)
+		printf("Failed Search \n");
+	else
+		printf("\nSucessfully Found key: %d \n", BSTGetNodeData(sNode));
+
 	return 0; 
 }
