@@ -1,17 +1,15 @@
-#include <iostream> 
+#include <stdio.h> 
 #include <stdlib.h> 
 #include <time.h>
-#include <iomanip> 
+#include <stdint.h>
 
-void Insertionsort(int arr[],int n); 
+static const uint8_t ArrayLength = 100;
 
-#define ArrayLength 100
-
-
-void Insertionsort(int arr[],int n)
+static void Insertionsort(uint8_t arr[],int n)
 {
-    int i,j;
-    int insData; 
+    static uint8_t insData;     
+    int j; 
+    int i;
     for(i=1;i<n;i++)
     {
         insData=arr[i];
@@ -22,20 +20,19 @@ void Insertionsort(int arr[],int n)
             else 
                 break;
         }
-
         arr[j+1] =insData; 
     }
 }
 
-void PrintArray(int arr[ArrayLength])
+static void PrintArray(uint8_t arr[ArrayLength])
 {
-    for(int i =0; i <ArrayLength; i++)
+    for(int i =0; i < ArrayLength; i++)
     {
-        std::cout<< arr[i] <<" "; 
+        printf("%d ",arr[i]); 
     }
 }
 
-void InputRandomNumber_ToArray(int arr[ArrayLength])
+static void InputRandomNumber_ToArray(uint8_t arr[ArrayLength])
 {
     for(int i =0; i <ArrayLength; i++)
     {
@@ -49,13 +46,14 @@ int main(void)
     starttime = clock();
 
     srand (time(NULL));   
-    int arr [ArrayLength];
+    uint8_t arr [ArrayLength];
 
     InputRandomNumber_ToArray(arr);
 
     printf("Before Insertion Sort\n");
-    PrintArray(arr);   
-    Insertionsort(arr, sizeof(arr)/sizeof(int) ); 
+    PrintArray(arr);
+
+    Insertionsort(arr, sizeof(arr)/sizeof(uint8_t) ); 
     
     printf("\n\nAfter Insertion Sort\n");
     PrintArray(arr);
@@ -63,9 +61,9 @@ int main(void)
 
     printf("\n\n");
     endtime = clock();   
-    double time_taken = double(endtime - starttime)/ double(CLOCKS_PER_SEC);
-    std::cout << "Time taken by program is : " << std::fixed << time_taken << std::setprecision(10);
-    std::cout << " sec " << std::endl;
+    
+    double time_taken = (double)(endtime - starttime)/ (double)(CLOCKS_PER_SEC);
+    printf("Time taken by program is : %.10f sec\n", time_taken);
     
     return 0; 
 }

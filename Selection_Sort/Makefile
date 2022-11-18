@@ -5,4 +5,5 @@ Language = c
 main:
 	$(CC) $(CFLAGS) main.$(Language) -o main 
 clean:
-	$(RM) $(main)
+	$(RM) main.exe
+	$(RM) main

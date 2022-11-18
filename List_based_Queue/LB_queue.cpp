@@ -29,7 +29,6 @@ void Queue::enqueue(int Data)
 		front = node; 
 		rear = node; 
 	}
- 
 	else
 	{ 
 		rear->next = node;
@@ -43,12 +42,8 @@ int Queue::dequeue()
 	std::shared_ptr<Node> deletenode = front; 
 
 	int number = front->data; 
-	
-	
 	front = front->next; 
 //	free(deletenode); 
-
-
 	return number; 
 }
 

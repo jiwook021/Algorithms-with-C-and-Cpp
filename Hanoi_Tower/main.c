@@ -1,7 +1,8 @@
 #include <stdio.h>
-void hanoi(int n, char from, char by, char to);
 
-void hanoi(int n, char from, char by, char to)
+static void hanoi(int n, char from, char by, char to);
+
+static void hanoi(int n, char from, char by, char to)
 {
 	if (n == 1)
 	{
@@ -16,8 +17,7 @@ void hanoi(int n, char from, char by, char to)
 	}
 }
 
-
 int main()
 {
-	hanoi(6, 'a', 'b', 'c');
+	hanoi(2, 'a', 'b', 'c');
 }

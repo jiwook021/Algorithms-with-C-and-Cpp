@@ -7,22 +7,18 @@ int main()
 	//to mesure performence time	
 	clock_t starttime,endtime;
     starttime = clock();
-	
-	Queue test; 
-
 	time_t t;
    	srand((unsigned) time(&t));
 	
 	const uint8_t size = 40; 
-
+	Queue test; 
+	
 	for(uint8_t i =0; i < size; i++)
     {
 		test.enqueue(rand() % 80+11);
 		std::cout << "Currnet Peek: "<<test.peek(); 
 		printf("\n");
 	}
-
-
 	printf("\n");
 
 	for(uint8_t i =0; i < size; i++)

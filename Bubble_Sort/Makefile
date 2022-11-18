@@ -1,6 +1,6 @@
-CC = g++
-CFLAGS  = -g -Wall -std=c++17
-Language = cpp
+CC = gcc
+CFLAGS  = -g -Wall
+Language = c
 main = main
 
 main:
