@@ -3,9 +3,10 @@
 #include <time.h>
 #include <iomanip> 
 
-#define ArrayLength 100
 
-void PrintArray(int arr[ArrayLength])
+static const uint8_t ArrayLength = 100;
+
+static void PrintArray(int arr[ArrayLength])
 {
     for(int i =0; i <ArrayLength; i++)
     {
@@ -13,7 +14,7 @@ void PrintArray(int arr[ArrayLength])
     }
 }
 
-void InputRandomNumber_ToArray(int arr[ArrayLength])
+static void InputRandomNumber_ToArray(int arr[ArrayLength])
 {
     for(int i =0; i <ArrayLength; i++)
     {
@@ -21,7 +22,7 @@ void InputRandomNumber_ToArray(int arr[ArrayLength])
     }
 }
 
-void MergeTwoArea(int arr[],int left, int mid, int right)
+static void MergeTwoArea(int arr[],int left, int mid, int right)
 {
     int fIdx =left;
     int rIdx = mid+1; 
@@ -59,19 +60,16 @@ void MergeTwoArea(int arr[],int left, int mid, int right)
     free(sortArr);
 }
 
-void MergeSort(int arr[],int left,int right)
+static void MergeSort(int arr[],int left,int right)
 {
     int mid; 
-
     if(left<right) 
     {
         mid = (left+right)/2; 
         MergeSort(arr,left,mid);
         MergeSort(arr,mid+1,right);
-        MergeTwoArea(arr,left,mid,right);
-            
+        MergeTwoArea(arr,left,mid,right);   
     }
-
 }
 
 int main(void)
@@ -80,8 +78,9 @@ int main(void)
     starttime = clock();
     srand (time(NULL));
     
-    int arr [ArrayLength];
 
+    int arr [ArrayLength];
+    
     InputRandomNumber_ToArray(arr);
     printf("\nBefore Merge Sort: ");
     PrintArray(arr);   
