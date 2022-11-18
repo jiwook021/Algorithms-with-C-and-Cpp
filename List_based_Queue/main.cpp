@@ -9,6 +9,8 @@ int main()
     starttime = clock();
 	time_t t;
    	srand((unsigned) time(&t));
+
+
 	
 	const uint8_t size = 40; 
 	Queue test; 
@@ -28,6 +30,10 @@ int main()
 	}
 	printf("\n\n");
 
+	
+	
+	
+	
 	endtime = clock();
     double time_taken = double(endtime - starttime)/ double(CLOCKS_PER_SEC);
     std::cout << "Time taken by program is : " << std::fixed << time_taken << std::setprecision(10) << " sec " << std::endl;
