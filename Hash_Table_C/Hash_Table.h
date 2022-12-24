@@ -1,7 +1,7 @@
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
 
-#define STR_LEN 100
+#define STR_LEN 100 //maximum string length for name and address
 #define MAX_TBL 100
 
 typedef struct _person
@@ -12,14 +12,17 @@ typedef struct _person
 } Person;
 
 
-int GetSSN(Person *p);
+const int GetSSN(Person *p);
 void ShowPerInfo(Person *p);
 Person *MakePersonData(int ssn, char *name, char *addr);
 
 
 typedef int Key;
 typedef Person* Value;
-typedef enum SlotStatus {EMPTY, DELETED, INUSE} SlotStatus;
+typedef enum SlotStatus 
+{
+    EMPTY, DELETED, INUSE
+} SlotStatus;
 
 typedef struct _slot
 {
