@@ -8,11 +8,12 @@ int main()
 {
 	clock_t starttime,endtime;
     starttime = clock();
-
 	time_t t;
    	srand((unsigned) time(&t));
+
+
+
 	const uint8_t size = 40; 
-	
 	queue * queue1; 
 
 	for(uint8_t i =0; i < size; i++)
@@ -31,6 +32,9 @@ int main()
 	
 	printf("\n\n");
 
+	
+	
+	
 	endtime = clock();
     double time_taken = (double)(endtime - starttime)/ (double)(CLOCKS_PER_SEC);
     printf("Time taken by program is : %.10f sec\n\n",time_taken);

@@ -2,30 +2,52 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//LIFO
+// _____  <--- head 
+// _____
+// _____  
 void initstack(stack* self)
 { 
-	self->head = (Node*)malloc(sizeof(Node)); 
+	self->head = NULL; 
 }
+
+//LIFO
+// _____ <--- newNode next null(potential head)
+//
+// _____  <--- head(peek)
+// _____
+// _____  
 
 void push(int data,stack* self)
 {
 	Node* newNode = (Node*)malloc(sizeof(Node));
-	newNode->next = NULL;
 	newNode->data = data; 
-	newNode->next = self->head->next; 
-	self->head->next = newNode; 
+	
+	newNode->next = NULL;
+	newNode->previous = self->head;
+	self->head = newNode;  
+
 	printf("Pushed %d\t",data);
 }
-
+// _____  <--- head(needs to be delete)
+// _____  <--- potential head
+// _____  
 void pop(stack* self)
 {
-	Node* deleteNode = self->head->next;
-	self->head->next = self->head->next->next;
+	if(self->head == NULL)
+		return;
+	Node* deleteNode = self->head;
+	
+	self->head = self->head->previous;
+	
 	printf("Pop: %d\t", deleteNode->data);
 	free(deleteNode);
 }
 
 int peek(stack* self) 
 {
-	return self->head->next->data; 
+	if(self->head == NULL)
+		return -1;
+
+	return self->head->data; 
 }

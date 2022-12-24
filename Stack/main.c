@@ -10,7 +10,8 @@ int main()
    	srand((unsigned) time(&t));
 	
 	stack* stack1; 
-
+	initstack(stack1);
+	
 	const uint8_t size = 30; 
 
 	for(uint8_t i =0; i < size; i++)
@@ -19,6 +20,8 @@ int main()
 		printf("Peek: %d\n",peek(stack1)); 
 	}
 
+	printf("\n");
+	
 	for(uint8_t i =1; i < size; i++)
     {
 		pop(stack1); 
