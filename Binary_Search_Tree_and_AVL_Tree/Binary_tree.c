@@ -130,7 +130,7 @@ void Travelpreorder(btreeNode* root)
 //    n n  n n n n  n n  
 void Travelpostorder(btreeNode* root)
 {
-	if (root == nullptr)
+	if (root == NULL)
 	{
 		return;
 	}
