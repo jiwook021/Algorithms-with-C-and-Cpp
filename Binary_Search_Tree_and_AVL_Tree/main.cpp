@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Binary_tree.hpp"
+#include "Binary_tree.h"
 #include "Binary_Search_Tree.hpp"
 
 int main()
@@ -8,7 +8,7 @@ int main()
 	
 	BSTMakeAndInit(&avlRoot);
 
-	for(int i = 1; i<=20; i++)
+	for(int i = 1; i<=7; i++)
 	{
 		BSTInsert(&avlRoot, i);	
 	}

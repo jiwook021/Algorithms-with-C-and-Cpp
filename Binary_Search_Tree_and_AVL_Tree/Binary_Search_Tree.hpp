@@ -1,6 +1,6 @@
 #ifndef __BINARY_SEARCH_TREE_H__
 #define __BINARY_SEARCH_TREE_H__
-#include "Binary_tree.hpp"
+#include "Binary_tree.h"
 
 void BSTMakeAndInit(btreeNode ** pRoot); 
 const int BSTGetNodeData(btreeNode* bst); 

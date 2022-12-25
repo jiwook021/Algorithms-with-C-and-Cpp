@@ -9,28 +9,30 @@ void BSTMakeAndInit(btreeNode** Parent_Root)
 
 const int BSTGetNodeData(btreeNode* Binary_Search_tree_Node)
 {
-	return Binary_Search_tree_Node->GetData();
+	return GetData(Binary_Search_tree_Node);
 }
 
 btreeNode* BSTInsert(btreeNode** Parent_Root, int data)
 {
 	if (*Parent_Root == NULL)
 	{
-		*Parent_Root = new btreeNode(data);
+		*Parent_Root = (btreeNode*) malloc (sizeof(btreeNode));
+
+		initbtreeNode(data,*Parent_Root);
 	}
-	else if (data < (*Parent_Root)->GetData())
+	else if (data < GetData(*Parent_Root))
 	{
 		BSTInsert(&((*Parent_Root)->left), data);
 		*Parent_Root = Rebalance(Parent_Root);
 	}
-	else if (data > (*Parent_Root)->GetData())
+	else if (data > GetData(*Parent_Root))
 	{
 		BSTInsert(&((*Parent_Root)->right), data);
 		*Parent_Root = Rebalance(Parent_Root);
 	}
 	else
 	{
-		return nullptr;
+		return NULL;
 	}
 	return *Parent_Root;
 }
@@ -42,34 +44,37 @@ btreeNode* BSTSearch(btreeNode* Binary_Search_tree_Node, int target)
 
 	while (Child_Node != nullptr)
 	{
-		cd = Child_Node->GetData();
+		cd = GetData(Child_Node);
 		if (target == cd)
 			return Child_Node;
 		else if (target < cd)
-			Child_Node = Child_Node->GetLeftTree();
+			Child_Node = GetLeftTree(Child_Node);
 		else
-			Child_Node = Child_Node->GetRightTree();
+			Child_Node = GetRightTree(Child_Node);
 	}
 	return nullptr; 
 }
 
 btreeNode* BSTRemove(btreeNode** Parent_Root, int target)
 {
-	btreeNode* pVRoot = new btreeNode(0);
+	//btreeNode* pVRoot = new btreeNode(0);
+	btreeNode *pVRoot = (btreeNode*) malloc (sizeof(btreeNode));
+	initbtreeNode(0,*Parent_Root);
+	
 	btreeNode* pNode = pVRoot;
 	btreeNode* Child_Node = *Parent_Root; 
 	btreeNode* dNode;
 
-	pVRoot->ChangeRightTree(*Parent_Root);
+	ChangeRightTree(*Parent_Root,pVRoot);
 
-	while (Child_Node != nullptr && Child_Node->GetData() != target)
+	while (Child_Node != nullptr && GetData(Child_Node) != target)
 	{
 		pNode = Child_Node; 
 
-		if (target < Child_Node->GetData())
-			Child_Node = Child_Node->GetLeftTree();
+		if (target < GetData(Child_Node))
+			Child_Node = GetLeftTree(Child_Node);
 		else
-			Child_Node = Child_Node->GetRightTree(); 
+			Child_Node = GetRightTree(Child_Node); 
 	}
 
 	if (Child_Node == nullptr)
@@ -77,54 +82,52 @@ btreeNode* BSTRemove(btreeNode** Parent_Root, int target)
 
 	dNode = Child_Node; 
 
-	if (dNode->GetLeftTree() == nullptr && dNode->GetRightTree() == nullptr)
+	if (GetLeftTree(dNode) == nullptr && GetRightTree(dNode) == nullptr)
 	{
-		if (pNode->GetLeftTree() == dNode)
-			pNode->RemoveLeftTree();
+		if (GetLeftTree(pNode) == dNode)
+			RemoveLeftTree(pNode);
 		else
-			pNode->RemoveRightTree(); 
+			RemoveRightTree(pNode); 
 	}
-	else if (dNode->GetLeftTree() == nullptr || dNode->GetRightTree() == nullptr)
+	else if (GetLeftTree(dNode) == nullptr || GetRightTree(dNode) == nullptr)
 	{
 		btreeNode* dcNode; 
 
-		if (dNode->GetLeftTree() != nullptr)
-			dcNode = dNode->GetLeftTree();
+		if (GetLeftTree(dNode) != nullptr)
+			dcNode = GetLeftTree(dNode);
 		else 
-			dcNode = dNode->GetRightTree();
+			dcNode = GetRightTree(dNode);
 
-		if (pNode->GetLeftTree() == dNode)
-			pNode->ChangeLeftTree(dcNode);
+		if (GetLeftTree(pNode) == dNode)
+			ChangeLeftTree(dcNode,pNode);
 		else
-			pNode->ChangeRightTree(dcNode);
+			ChangeRightTree(dcNode,pNode);
 	}
 	else
 	{
-		btreeNode* mNode = dNode->GetRightTree(); 
+		btreeNode* mNode = GetRightTree(dNode); 
 		btreeNode* mpNode = dNode; 
 		int delData; 
 
-		while (mNode->GetLeftTree() != nullptr) {
+		while (GetLeftTree(mNode) != nullptr) {
 			mpNode = mNode;
-			mNode = mNode->GetLeftTree(); 
+			mNode = GetLeftTree(mNode); 
 		}
 
-		delData = dNode->GetData(); 
-		dNode->SetData(mNode->GetData());
+		delData = GetData(dNode); 
+		SetData(GetData(mNode),dNode);
 
-		if (mpNode->GetLeftTree() == mNode)
-			mpNode->ChangeLeftTree(mNode->GetRightTree());
+		if (GetLeftTree(mpNode) == mNode)
+			ChangeLeftTree(GetRightTree(mNode),mpNode);
 		else
-			mpNode->ChangeRightTree(mNode->GetRightTree());
+			ChangeRightTree(GetRightTree(mNode),mpNode);
 
 		dNode = mNode; 
-
-		dNode->SetData(delData);
-
+		SetData(delData,dNode);
 	}
 
-	if (pVRoot->GetRightTree() != *Parent_Root)
-		*Parent_Root = pVRoot->GetRightTree();
+	if (GetRightTree(pVRoot) != *Parent_Root)
+		*Parent_Root = GetRightTree(pVRoot);
 	free(pVRoot);
 	Rebalance(Parent_Root);
 	return dNode; 

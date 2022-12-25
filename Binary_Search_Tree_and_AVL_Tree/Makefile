@@ -10,12 +10,12 @@ Language = cpp
 main: $(main).o $(Target1).o $(Target2).o $(Target3).o 
 	$(CC) $(CFLAGS) -o main main.o $(Target1).o $(Target2).o $(Target3).o
  
-main.o: $(main).$(Language) $(Target1).hpp $(Target2).hpp $(Target3).hpp
+main.o: $(main).$(Language) $(Target1).hpp $(Target2).hpp $(Target3).h
 	$(CC) $(CFLAGS) -c $(main).$(Language)
  
-$(Target1).o: $(Target1).hpp $(Target2).hpp $(Target3).hpp
+$(Target1).o: $(Target1).hpp $(Target2).hpp $(Target3).h
 $(Target2).o: $(Target2).hpp $(Target2).hpp
-$(Target3).o: $(Target3).hpp
+$(Target3).o: $(Target3).h
 
 clean:
 	$(RM) $(Target)
