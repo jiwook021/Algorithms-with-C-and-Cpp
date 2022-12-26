@@ -5,12 +5,14 @@
 
 int main()
 {
-	heap heap;
-	heapInit(&heap);
+	
 	//for random generation
  	time_t t;
    	srand((unsigned) time(&t));
 
+
+	heap heap;
+	heapInit(&heap);
 	static const uint8_t size = 40; 
 	for(uint8_t i =0; i < size; i++)
     {

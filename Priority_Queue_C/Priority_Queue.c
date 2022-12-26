@@ -31,7 +31,12 @@ int GetRChildIDX(int idx)
 {
 	return GetLChildIDX(idx) + 1; 
 }
-
+// pr 3
+//  	0[1] 
+// 	1[2]  	   2[3] 
+//3[4] 4[5]  5[6] 6[7]
+//
+//
 void HInsert(heap* ph, HData data, Priority pr)
 {
 	int idx = ph->numOfData + 1; 
@@ -41,8 +46,8 @@ void HInsert(heap* ph, HData data, Priority pr)
 	{
 		if(pr<(ph->heapArr[GetParentIDX(idx)].pr))
 		{
-		ph->heapArr[idx] = ph->heapArr[GetParentIDX(idx)];
-		idx = GetParentIDX(idx); 
+			ph->heapArr[idx] = ph->heapArr[GetParentIDX(idx)];
+			idx = GetParentIDX(idx); 
 		}
 
 		else 

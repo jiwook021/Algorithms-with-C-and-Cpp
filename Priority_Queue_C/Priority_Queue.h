@@ -7,18 +7,16 @@ typedef int Priority;
 #define HEAP_LEN 100 
 
 typedef struct _heapElem
-
 {
 	Priority pr;
 	HData data;
 }HeapElem; 
 
-
+//[heapElem[pr, data] numofdata][0] ... [heapElem[pr, data] numofdata][HEAP_LEN]
 typedef struct _heap
 {
 	int numOfData;
 	HeapElem heapArr[HEAP_LEN];
-
 } heap;
 
 void heapInit(heap *ph);
