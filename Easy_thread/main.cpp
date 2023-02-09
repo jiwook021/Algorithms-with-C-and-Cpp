@@ -8,61 +8,66 @@
 
 
 
-void hello1()
-{
-  for (int i=0;i<10;i++)
-  {
-    std::cout<<"Hello 1 "<<i<<std::endl;
-  }
-}
-void hello2()
-{
-  for (int i=0;i<10;i++)
-  {
-    std::cout<<"Hello 2 "<<i<<std::endl;
-  }
-}
-void hello3()
-{
-  for (int i=0;i<10;i++)
-  {
-    std::cout<<"Hello 3 " <<i<<std::endl;
-  }
-}
-void hello4()
-{
-  for (int i=0;i<10;i++)
-  {
-    std::cout<<"Hello 4 " <<i<<std::endl;
-  }
-}
+// void hello1()
+// {
+//   for (int i=0;i<10;i++)
+//   {
+//     std::cout<<"Hello 1 "<<i<<std::endl;
+//     sleep(1);
+//   }
+// }
+// void hello2()
+// {
+//   for (int i=0;i<10;i++)
+//   {
+//     std::cout<<"Hello 2 "<<i<<std::endl;
+//     sleep(1);
+//   }
+// }
+// void hello3()
+// {
+//   for (int i=0;i<10;i++)
+//   {
+//     std::cout<<"Hello 3 " <<i<<std::endl;
+//     sleep(1);
+//   }
+// }
+// void hello4()
+// {
+//   for (int i=0;i<10;i++)
+//   {
+//     std::cout<<"Hello 4 " <<i<<std::endl;
+//     sleep(1);
+//   }
+// }
 
-void hello5()
-{
+// void hello5()
+// {
   
-	for (int i=0;i<10;i++)
-  {
-    std::cout<<"Hello 5 "<<i<<std::endl;
-  }
-}
+// 	for (int i=0;i<10;i++)
+//   {
+//     std::cout<<"Hello 5 "<<i<<std::endl;
+//     sleep(1);
+//   }
+// }
 
 
-void test()
-{
-    std::thread t1(hello1);
-    std::thread t2(hello2);
-    std::thread t3(hello3);
-    std::thread t4(hello4);
-    std::thread t5(hello5);
+// void test()
+// {
+//     std::thread t1(hello1);
+//     std::thread t2(hello2);
+//     std::thread t3(hello3);
+//     std::thread t4(hello4);
+//     std::thread t5(hello5);
     
 
-    t1.join();
-    t2.join();
-    t3.join();
-    t4.join();
-    t5.join();
+//     t1.join();
+//     t2.join();
+//     t3.join();
+//     t4.join();
+//     t5.join();
     
-}
+// }
 
 // struct func
 // {
@@ -82,10 +87,8 @@ void test()
 
 // int main()
 // {
-//   //oops();
-//   test();
-// 	//f();
-//   return 0;
+//    test();
+// 	return 0;
 // }
 
   
