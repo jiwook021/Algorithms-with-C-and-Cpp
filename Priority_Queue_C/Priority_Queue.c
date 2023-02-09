@@ -32,21 +32,24 @@ int GetRChildIDX(int idx)
 	return GetLChildIDX(idx) + 1; 
 }
 // pr 3
-//  	0[1] 
-// 	1[2]  	   2[3] 
-//3[4] 4[5]  5[6] 6[7]
+//  				[1]{data,1} 
+// 	[2]{data,2}     			[3]{data,3} 
+//[4]{data,4}[5]{data,5}  [6]]{data,6} [7]{data,7}
 //
+//1.nelem = [8],{3,ndata} 
+//2.nelem = [4],{3,ndata}
 //
 void HInsert(heap* ph, HData data, Priority pr)
 {
 	int idx = ph->numOfData + 1; 
 	HeapElem nelem ={ pr, data };
-	//ph->heapArr[ph->numOfData + 1] = x;
+	
 	while (idx != 1)
 	{
 		if(pr<(ph->heapArr[GetParentIDX(idx)].pr))
 		{
 			ph->heapArr[idx] = ph->heapArr[GetParentIDX(idx)];
+			ph->heapArr[GetParentIDX(idx)] = ph->heapArr[idx];
 			idx = GetParentIDX(idx); 
 		}
 
@@ -72,7 +75,6 @@ int getHiPriChiledIDX(heap* ph, int idx)
 		else
 			return GetLChildIDX(idx);
 	}
-
 }
 
 HData Hdelete(heap* ph)
