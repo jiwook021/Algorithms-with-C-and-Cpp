@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-static Node* front;
+
 static Node* rear;
 
 bool QisEmpty()
