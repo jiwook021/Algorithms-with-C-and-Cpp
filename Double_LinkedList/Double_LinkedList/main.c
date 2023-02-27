@@ -38,6 +38,11 @@ int main()
 	
 	printList(&list1);
 	
+	sort_double_Linkled_list(&list1);
+	printf("Sorted List\n");
+	
+	printList(&list1);
+
 	for (int i=0;i<10;i++)
 	{
 		search(random_number15(),&list1);
@@ -53,3 +58,4 @@ int main()
 	
 	return 0;
 }
+

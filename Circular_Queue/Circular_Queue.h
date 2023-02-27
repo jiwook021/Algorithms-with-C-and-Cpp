@@ -8,9 +8,11 @@ typedef struct Node
 	struct Node* next;
 } Node;
 
+
+
 bool QisEmpty();
 void enqueue(int data);
 int dequeue();
 int peek();
-
+Node* front;
 #endif 
