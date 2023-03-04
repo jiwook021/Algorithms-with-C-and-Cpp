@@ -57,6 +57,10 @@ void example1(LinkedList* list)
 	}	
 	printf("\nResult Linked List\n");
 	vPrint(list);
+
+	vsort_single_linked_list(list);
+	vPrint(list);
+
 }
 
 void example2(LinkedList* list)

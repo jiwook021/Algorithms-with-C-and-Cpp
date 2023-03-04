@@ -49,7 +49,7 @@ bool vInsertionMid(int iData, int iSeq,struct LinkedList* pthis)
 	newNode->iData = iData;
 	
 	pthis->nCurrent = pthis->nHead;
-	for (int i = 0; i < (iSeq - 2); i++)
+	for (int i = 0; i < (iSeq - 1); i++)
 	{
 		pthis->nCurrent = pthis->nCurrent->NextNode;
 	}
@@ -86,7 +86,8 @@ bool vRemove(int iData,struct LinkedList* pthis)
 			if (iData == (pthis->nCurrent->iData))
 			{
 				nPrev->NextNode = pthis->nCurrent->NextNode;
-				//free(nCurrent);
+				free(pthis->nCurrent);
+				pthis->nCurrent = NULL;
 				pthis->size--;
 				printf("Deleted %d\t", iData);
 				return true;
@@ -96,6 +97,8 @@ bool vRemove(int iData,struct LinkedList* pthis)
 	else
 	{
 		pthis->nHead = pthis->nHead->NextNode;
+		free(pthis->nCurrent);
+		pthis->nCurrent = NULL;
 		pthis->size--;
 		return true;
 	}
@@ -118,6 +121,26 @@ void vSearch(int iData,struct LinkedList* pthis)
 	if (check == false)
 	{
 		printf("Can't find %d\t", iData);
+	}
+}
+
+void vsort_single_linked_list(struct LinkedList* pthis)
+{
+	int temp;
+	pthis->nCurrent = pthis->nHead;
+	for (int i = 0; i < pthis->size; i++)
+	{
+		for (int j = 0; j < pthis->size - i - 1; j++)
+		{
+			if (pthis->nCurrent->iData > pthis->nCurrent->NextNode->iData)
+			{
+				temp = pthis->nCurrent->iData;
+				pthis->nCurrent->iData = pthis->nCurrent->NextNode->iData;
+				pthis->nCurrent->NextNode->iData = temp;
+			}
+			pthis->nCurrent = pthis->nCurrent->NextNode;
+		}
+		pthis->nCurrent = pthis->nHead;
 	}
 }
 
