@@ -38,6 +38,5 @@ void heapInit(heap *ph);
 int HIsEmpty(heap* ph);
 void HInsert(heap* ph, HData data, Priority pr); 
 HData Hdelete(heap *ph); 
-
 #endif 
 

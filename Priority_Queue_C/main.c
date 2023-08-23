@@ -1,15 +1,14 @@
 #include "Priority_Queue.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdint.h>
 
 int main()
 {
-	
 	//for random generation
  	time_t t;
    	srand((unsigned) time(&t));
-
 
 	heap heap;
 	heapInit(&heap);
@@ -18,7 +17,6 @@ int main()
     {
 		HInsert(&heap,rand() % 100, rand() % 20);
     }
-
 	printf("\n\n======================================================Print heap======================================================\n\n");
 	while (!HIsEmpty(&heap))
 		printf("%d  ", Hdelete(&heap));
