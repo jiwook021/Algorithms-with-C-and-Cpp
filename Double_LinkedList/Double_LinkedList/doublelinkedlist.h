@@ -22,7 +22,6 @@ typedef struct LinkedList
 	bool init; 
 }LinkedList;
  
-	
 void initLinkedList(struct LinkedList* self);
 bool insert(int data,struct LinkedList* self);
 bool insertMid(int data, int seq,struct LinkedList* self);

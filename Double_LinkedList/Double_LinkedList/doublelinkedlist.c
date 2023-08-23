@@ -15,15 +15,12 @@ bool insert(int data,struct LinkedList* self)
 {
 	if(self->init==false) 
 		return false; 
-
 	Node* newNode = (Node*)malloc(sizeof(Node));
 	if(NULL==newNode)
 		return false;
-
 	newNode->data = data;
 	newNode->next = NULL;
 	newNode->previous = NULL;
-
 	if (self->head == NULL)
 	{
 		self->head = newNode;
@@ -42,7 +39,6 @@ bool insert(int data,struct LinkedList* self)
 }
 
 //In the insertMid() function, the self->tail pointer is updated to point to the new node, which is incorrect. It should only be updated if the new node is added at the end of the list.
-
 bool insertMid(int data, int seq,struct LinkedList* self)
 {
 	if (!self->init) 
@@ -58,9 +54,7 @@ bool insertMid(int data, int seq,struct LinkedList* self)
 	}
 	newNode->data = data;
 	newNode->next = NULL;
-
 	self->current = self->head;
-
 	for (int i = 1; i < seq - 1; i++)
 	{
 		self->current = self->current->next;
@@ -73,10 +67,8 @@ bool insertMid(int data, int seq,struct LinkedList* self)
 		self->current->next->previous = newNode;
 	newNode->previous = self->current;
 	self->current->next = newNode;
-
 	if (self->tail == self->current)
 		self->tail = newNode;
-
 	printf("Insert %d at %d\n", data, seq);
 	self->size++;
 	return true;
@@ -100,7 +92,6 @@ bool check(int data, struct LinkedList* self)
 bool search(int data,struct LinkedList* self) 
 {	
 	self->current = self->head;
-
 	for (int i = 0; i < self->size; i++)
 	{
 		if (data == self->current->data) 
