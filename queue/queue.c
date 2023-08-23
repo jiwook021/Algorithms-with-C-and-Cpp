@@ -10,8 +10,6 @@ void Initqueue(queue *self)
 	self->rear = 0;
 }
 
-
-
 bool QueueisEmpty(queue *self)
 {
 	if (self->front == self->rear) //if index value of rear and front is same queue is empty
@@ -38,7 +36,6 @@ void enqueue(int data, queue *self)
 {
 	self->rear=NextPosIdx(self->rear); 
 	self->queArr[self->rear] = data; 
-	
 	printf("\nEnqueued: %d\t",data);
 }
 
