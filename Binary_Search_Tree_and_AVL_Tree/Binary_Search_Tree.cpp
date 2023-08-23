@@ -41,7 +41,6 @@ btreeNode* BSTSearch(btreeNode* Binary_Search_tree_Node, int target)
 {
 	btreeNode* Child_Node = Binary_Search_tree_Node; 
 	int cd;
-
 	while (Child_Node != nullptr)
 	{
 		cd = GetData(Child_Node);
@@ -60,13 +59,10 @@ btreeNode* BSTRemove(btreeNode** Parent_Root, int target)
 	//btreeNode* pVRoot = new btreeNode(0);
 	btreeNode *pVRoot = (btreeNode*) malloc (sizeof(btreeNode));
 	initbtreeNode(0,*Parent_Root);
-	
 	btreeNode* pNode = pVRoot;
 	btreeNode* Child_Node = *Parent_Root; 
 	btreeNode* dNode;
-
 	ChangeRightTree(*Parent_Root,pVRoot);
-
 	while (Child_Node != nullptr && GetData(Child_Node) != target)
 	{
 		pNode = Child_Node; 
@@ -76,12 +72,9 @@ btreeNode* BSTRemove(btreeNode** Parent_Root, int target)
 		else
 			Child_Node = GetRightTree(Child_Node); 
 	}
-
 	if (Child_Node == nullptr)
 		return nullptr;
-
 	dNode = Child_Node; 
-
 	if (GetLeftTree(dNode) == nullptr && GetRightTree(dNode) == nullptr)
 	{
 		if (GetLeftTree(pNode) == dNode)
@@ -113,7 +106,6 @@ btreeNode* BSTRemove(btreeNode** Parent_Root, int target)
 			mpNode = mNode;
 			mNode = GetLeftTree(mNode); 
 		}
-
 		delData = GetData(dNode); 
 		SetData(GetData(mNode),dNode);
 

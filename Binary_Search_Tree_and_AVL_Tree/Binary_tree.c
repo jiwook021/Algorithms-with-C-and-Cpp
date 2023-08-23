@@ -10,27 +10,22 @@ void initbtreeNode(int data, btreeNode* selfNode)
 	selfNode->left = NULL;
 	selfNode->right = NULL;
 }
-
 const int GetData(btreeNode* selfNode)
 {
 	return selfNode->data;
 }
-
 void SetData(int data,btreeNode* selfNode)
 {
 	selfNode->data=data; 
 }
-
 btreeNode* GetLeftTree(btreeNode* selfNode)
 {
 	return selfNode->left; //bring pointer to left tree
 }
-
 btreeNode* GetRightTree(btreeNode* selfNode)
 {
 	return selfNode->right; //bring pointer to right tree
 }
-
 void MakeLeftTree(btreeNode* sub, btreeNode* selfNode)
 {
 	if (selfNode->left != NULL)
@@ -38,7 +33,6 @@ void MakeLeftTree(btreeNode* sub, btreeNode* selfNode)
 
 	selfNode->left = sub;
 }
-
 void MakeRightTree(btreeNode* sub,btreeNode* selfNode)
 {
 	if (selfNode->right != NULL)
@@ -46,8 +40,6 @@ void MakeRightTree(btreeNode* sub,btreeNode* selfNode)
 
 	selfNode->right = sub;
 }
-
-
 //delete node = self -> left
 //free self ->left, self -> left = NULL, returns previous selfNode ->left
 btreeNode* RemoveLeftTree(btreeNode* selfNode)
@@ -62,7 +54,6 @@ btreeNode* RemoveLeftTree(btreeNode* selfNode)
 	}
 	return delNode;
 }
-
 //delete node = self -> right
 //free self ->right, self -> right = NULL, returns previous selfNode ->right
 btreeNode* RemoveRightTree(btreeNode* selfNode)
@@ -75,12 +66,10 @@ btreeNode* RemoveRightTree(btreeNode* selfNode)
 	}
 	return delNode;
 }
-
 void ChangeLeftTree(btreeNode* sub,btreeNode* selfNode)
 {
 	selfNode->left = sub; 
 }
-
 void ChangeRightTree(btreeNode* sub,btreeNode* selfNode)
 {
 	selfNode->right = sub; 

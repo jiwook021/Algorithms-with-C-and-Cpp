@@ -7,5 +7,4 @@ const int BSTGetNodeData(btreeNode* bst);
 btreeNode* BSTInsert(btreeNode** pRoot, int data); 
 btreeNode* BSTSearch(btreeNode* bst, int target);
 btreeNode* BSTRemove(btreeNode** pRoot, int target);
-
 #endif

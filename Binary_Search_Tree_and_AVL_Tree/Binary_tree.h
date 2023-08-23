@@ -23,7 +23,6 @@ btreeNode* RemoveRightTree(btreeNode* selfNode);
 void ChangeLeftTree(btreeNode* sub,btreeNode* selfNode);
 void ChangeRightTree(btreeNode* sub,btreeNode* selfNode);
 
-
 void Travelinorder(btreeNode* root);
 void Travelpreorder(btreeNode* root);
 void Travelpostorder(btreeNode* root); 

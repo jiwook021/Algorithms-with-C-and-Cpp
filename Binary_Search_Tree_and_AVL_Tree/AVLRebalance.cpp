@@ -6,19 +6,15 @@
 int GetHeight(btreeNode* Binary_Search_Tree)
 {
 	int leftH, rightH;
-
 	if (Binary_Search_Tree == NULL)
 		return 0;
-
 	leftH = GetHeight(GetLeftTree(Binary_Search_Tree));
 	rightH = GetHeight(GetRightTree(Binary_Search_Tree));
-
 	if (leftH > rightH)
 		return leftH + 1;
 	else
 		return rightH + 1;
 }
-
 int getHeightDiff(btreeNode* Binary_Search_Tree)
 {
 	int left_search_height, right_search_height; 
@@ -30,7 +26,6 @@ int getHeightDiff(btreeNode* Binary_Search_Tree)
 	right_search_height = GetHeight(GetRightTree(Binary_Search_Tree));
 	return left_search_height - right_search_height;
 }
-
 btreeNode* RotateLL(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node; 
@@ -42,7 +37,6 @@ btreeNode* RotateLL(btreeNode* Binary_Search_Tree)
 	ChangeRightTree(Parent_Node,Child_Node);
 	return Child_Node; 
 }
-
 btreeNode* RotateRR(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node;
@@ -54,7 +48,6 @@ btreeNode* RotateRR(btreeNode* Binary_Search_Tree)
 	ChangeLeftTree(Parent_Node,Child_Node);
 	return Child_Node;
 }
-
 btreeNode* RotateLR(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node;
@@ -65,7 +58,6 @@ btreeNode* RotateLR(btreeNode* Binary_Search_Tree)
 	ChangeLeftTree(RotateRR(Child_Node),Parent_Node);
 	return RotateLL(Parent_Node);
 }
-
 btreeNode* RotateRL(btreeNode* Binary_Search_Tree)
 {
 	btreeNode* Parent_Node;
