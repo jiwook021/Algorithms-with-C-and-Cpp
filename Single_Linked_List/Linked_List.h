@@ -26,8 +26,6 @@ bool vInsertionMid(int iData, int iSeq,struct LinkedList* pthis);
 bool vRemove(int data,struct LinkedList* pthis);
 void vSearch(int iData,struct LinkedList* pthis);
 void vPrint(struct LinkedList* pthis);
-
 void example1(LinkedList* pthis);
 void example2(LinkedList* pthis);
-
 #endif 

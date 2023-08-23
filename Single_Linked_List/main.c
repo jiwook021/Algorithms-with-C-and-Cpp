@@ -9,7 +9,6 @@ void example1(LinkedList* list)
 {
 	time_t t;
  	srand((unsigned) time(&t));	
-
 	const uint8_t size = 16;
 	bool errorcheck;
 	for (int i=0;i<size;i++)
@@ -20,7 +19,6 @@ void example1(LinkedList* list)
 			printf("\nERROR INSERTING"); 
 		}
 	}
-
 	for (int i=0;i<size;i++)
 	{
 		errorcheck = vInsertionMid(random_number(), random_number(),list); //after insertion mid there is insertion problem
@@ -31,9 +29,6 @@ void example1(LinkedList* list)
 	}
 	printf("\nResult Linked List\n");
 	vPrint(list);
-	
-	
-	
 	for (int i=0;i<size;i++)
 	{
 		if(i%4==0)
@@ -42,9 +37,6 @@ void example1(LinkedList* list)
 	}
 	printf("\nResult Linked List\n");
 	vPrint(list);
-
-	
-
 	for (int i=0;i<size*2;i++)
 	{
 		if(i%4==0)
@@ -57,10 +49,8 @@ void example1(LinkedList* list)
 	}	
 	printf("\nResult Linked List\n");
 	vPrint(list);
-
 	vsort_single_linked_list(list);
 	vPrint(list);
-
 }
 
 void example2(LinkedList* list)
@@ -80,7 +70,6 @@ void example2(LinkedList* list)
 			}
 			vPrint(list);
 		}
-
 		if (iSelection == 1)
 		{
 			errorcheck =vRemove(iInput,list);
@@ -90,12 +79,10 @@ void example2(LinkedList* list)
 			}
 			vPrint(list);
 		}
-
 		if (iSelection == 2)
 		{
 			vSearch(iInput,list);		
 		}
-
 		if ((iSelection == -1) && (iInput == -1))
 		{
 			return;
@@ -111,6 +98,5 @@ int main()
 	LinkedList list2;
 	initLinkedList(&list2);
 	example2(&list);
-
 	return 0;
 }

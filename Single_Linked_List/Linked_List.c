@@ -1,4 +1,3 @@
-
 #include "Linked_List.h"
 
 void initLinkedList(struct LinkedList* pthis)
@@ -14,14 +13,11 @@ bool vInsertion(int iData,struct LinkedList* pthis)
 {
 	if(pthis->init==false) 
 		return false; 
-
 	Node* newNode = (Node*)malloc(sizeof(Node));
 	if(NULL==newNode)
 		return false;
-
 	newNode->iData = iData;
 	newNode->NextNode = NULL;
-
 	if (pthis->nHead == NULL)
 	{
 		pthis-> nHead = newNode;
@@ -30,7 +26,6 @@ bool vInsertion(int iData,struct LinkedList* pthis)
 	{
 		pthis->nTail->NextNode = newNode;
 	}
-
 	pthis->nTail = newNode;
 	pthis->size++;
 	return true;
@@ -41,19 +36,15 @@ bool vInsertionMid(int iData, int iSeq,struct LinkedList* pthis)
 {
 	if(pthis->init==false) 
 		return false; 
-
 	Node* newNode = (Node*)malloc(sizeof(Node));
 	if(NULL==newNode)
 		return false;
-
 	newNode->iData = iData;
-	
 	pthis->nCurrent = pthis->nHead;
 	for (int i = 0; i < (iSeq - 1); i++)
 	{
 		pthis->nCurrent = pthis->nCurrent->NextNode;
 	}
-
 	newNode->NextNode = pthis->nCurrent->NextNode;
 	pthis->nCurrent->NextNode = newNode;
 	pthis->size++;
@@ -64,20 +55,16 @@ bool vRemove(int iData,struct LinkedList* pthis)
 {
 	if(pthis->init==false) 
 		return false; 
-
 	if (pthis->nHead == NULL) 
 		return false;
-
 	pthis->nCurrent = pthis->nHead;	
 	Node* nPrev = pthis->nHead;
-
 	if (!(iData == (pthis->nHead->iData)))
 	{
 		for (int i = 0; i < pthis->size; i++)
 		{
 			nPrev = pthis->nCurrent;
 			pthis->nCurrent = pthis->nCurrent->NextNode;
-
 			if (pthis->nCurrent == NULL)
 			{
 				printf("Cannot found %d\t", iData);
