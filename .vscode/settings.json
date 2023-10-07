@@ -93,6 +93,12 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "filesystem": "c",
+        "codecvt": "cpp",
+        "mutex": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "__nullptr": "cpp"
     }
 }

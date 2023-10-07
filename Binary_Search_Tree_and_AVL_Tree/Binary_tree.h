@@ -17,12 +17,10 @@ btreeNode* GetLeftTree(btreeNode* selfNode);
 btreeNode* GetRightTree(btreeNode* selfNode);
 void MakeLeftTree(btreeNode* sub,btreeNode* selfNode);
 void MakeRightTree(btreeNode* sub,btreeNode* selfNode);
-
 btreeNode* RemoveLeftTree(btreeNode* selfNode);
 btreeNode* RemoveRightTree(btreeNode* selfNode);
 void ChangeLeftTree(btreeNode* sub,btreeNode* selfNode);
 void ChangeRightTree(btreeNode* sub,btreeNode* selfNode);
-
 void Travelinorder(btreeNode* root);
 void Travelpreorder(btreeNode* root);
 void Travelpostorder(btreeNode* root); 
