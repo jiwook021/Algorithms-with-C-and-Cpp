@@ -99,6 +99,7 @@
         "mutex": "cpp",
         "numbers": "cpp",
         "semaphore": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "__locale": "cpp"
     }
 }
