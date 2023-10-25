@@ -1,83 +1,97 @@
 #include <stdio.h>
+#include <stdint.h> 
 #include <stdlib.h>
-#include <malloc.h>
 
-typedef struct node{
-    struct node* left;
-    struct node* right;
-    int data;
-}NODE;
-
-typedef struct tree{
-    struct node* root;
-}TREE;
-
-TREE* initTREE()
+typedef struct Node
 {
-    TREE* newTREE = (TREE*)malloc(sizeof(TREE));
-    newTREE->root=NULL;
-    return newTREE; 
-}
-void insert(int data, TREE *tree) {
-    NODE* newNode = (NODE*)malloc(sizeof(NODE));
-    newNode->data = data;
-    newNode->left = NULL;
-    newNode->right = NULL;
+    struct Node* left;
+    struct Node* right; 
+    int data;
+}node; 
 
-    if(tree->root == NULL) {
-        tree->root = newNode;
+
+typedef struct Tree
+{
+    node* root;
+}tree;
+
+tree* inittree()
+{
+    tree* newTree = (tree*)malloc(sizeof(tree));
+    newTree -> root = NULL;
+    return newTree; 
+}
+
+void insertBST(tree* tr, int data)
+{
+    node* newNode = (node*) malloc(sizeof(node));
+    newNode->data =data;
+    newNode->left = NULL;
+    newNode->right = NULL; 
+    if(tr->root ==NULL)
+    {
+        tr->root = newNode;
         return;
     }
-
-    NODE* temp = tree->root;
-    NODE* parent = NULL;
-
-    while(temp != NULL) {
-        parent = temp;
-        if(data > temp->data) {
-            temp = temp->right;
-        } else {
-            temp = temp->left;
+    node* cNode = tr->root;
+    node* pNode;
+    while(cNode!=NULL)
+    {
+        pNode = cNode;
+        if(cNode->data < data)
+        {
+            cNode = cNode->right; 
+        }
+        else
+        {
+            cNode = cNode->left;
         }
     }
-
-    if(data > parent->data) {
-        parent->right = newNode;
-    } else {
-        parent->left = newNode;
+    if(pNode->data < data)
+    {
+        pNode->right = newNode; 
+    }
+    else
+    {
+        pNode->left = newNode;
     }
 }
 
-
-void dfsprint(NODE *node)
+void printTree(node* NODE)
 {
-    if(node == NULL)
+    if (NODE == NULL)
         return;
-    dfsprint(node->left);
-    printf("%d\n",node->data);
-    dfsprint(node->right);
+    printTree(NODE->left);
+    printf("%d\n",NODE->data);
+    printTree(NODE->right);
 }
 
 
-void bfsprint(NODE *root) {
+void bfsprint(node *root) {
     if (root == NULL)
         return;
-
-    NODE* queue[100];  // Queue of node pointers
+    node* queue[100];  // Queue of node pointers
     int head = 0, tail = 0;
-
     queue[tail++] = root;
-
     while (head < tail) {
-        NODE* current = queue[head++];
-        
+        node* current = queue[head++];
         printf("%d\n", current->data);
-
         if (current->left != NULL)
             queue[tail++] = current->left;
         if (current->right != NULL)
             queue[tail++] = current->right;
     }
+}
+
+int main()
+{
+    tree* tr = inittree();
+    insertBST(tr, 10);
+    insertBST(tr, 12);
+    insertBST(tr, 9);
+    insertBST(tr, 13);
+    //printTree(tr->root);
+    bfsprint(tr->root);
 }
 
 

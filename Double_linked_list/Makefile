@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS  = -g -Wall -lpthread
+CFLAGS  = -g -Wall
 Language = c
 
 main:
