@@ -42,6 +42,7 @@ void clear(DEQUE* dq)
 
 void push_front(DEQUE * dq,int data)
 {
+    //lock
     NODE* newNode = createnode(data);
     newNode->prev = NULL;
     if(dq->head ==NULL)
@@ -49,12 +50,11 @@ void push_front(DEQUE * dq,int data)
         dq->head = dq->rear = newNode;
         return;
     }
-    dq->head-> prev = newNode;
-    newNode->next = dq->head;
+    dq->head-> next = newNode;
+    newNode->prev = dq->head;
     dq->head = newNode;
+    //unlock
 }
-
-
 
 void push_back(DEQUE * dq,int data)
 {
@@ -65,8 +65,8 @@ void push_back(DEQUE * dq,int data)
         dq->rear = dq->head = newNode;
         return;
     }
-    dq->rear-> next = newNode;
-    newNode->prev = dq->rear;
+    dq->rear-> prev = newNode;
+    newNode->next = dq->rear;
     dq->rear = newNode;
 }
  
@@ -79,11 +79,10 @@ int pop_front(DEQUE* dq)
     }
     NODE* tmp = dq->head;
     int result = tmp->data; 
-    dq->head = dq->head->next;
+    dq->head = dq->head->prev;
     free(tmp);
     return result; 
 }
-
 
 //removes the last element
 int pop_back(DEQUE* dq)
@@ -94,26 +93,11 @@ int pop_back(DEQUE* dq)
     }
     NODE* tmp = dq->rear;
     int result = tmp->data; 
-    dq->rear = dq->rear->prev;
+    dq->rear = dq->rear->next;
     free(tmp);
     return result; 
 }
 
- 
-
-
-
-// //erases elements
-// void erase(DEQUE* dq, int n, int m)
-// {
-
-// }
-
-// resize
- 
-// //swaps the contents
-// swap
- 
 int main()
 {
     DEQUE* dq = initdeque();

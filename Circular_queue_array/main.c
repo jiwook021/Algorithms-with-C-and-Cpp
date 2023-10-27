@@ -20,7 +20,6 @@ q* init()
     q1->head = 0;
     q1->tail = 0; 
     q1->sz = 0;
-
     return q1;
 }
 
