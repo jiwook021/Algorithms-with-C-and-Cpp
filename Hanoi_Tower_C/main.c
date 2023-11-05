@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 static void hanoi(int n, char from, char by, char to);
-
 static void hanoi(int n, char from, char by, char to)
 {
 	if (n == 1)

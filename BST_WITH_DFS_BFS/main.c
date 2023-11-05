@@ -95,24 +95,24 @@ int main()
 }
 
 
-int main() {
-    TREE* tr = initTREE();
+// int main() {
+//     TREE* tr = initTREE();
 
-    insert(40, tr);
-    insert(30, tr);
-    insert(5, tr);
-    insert(60, tr);
-    insert(70, tr);
-    insert(80, tr);
-    insert(20, tr);
-    insert(4, tr);
-    insert(3, tr);
+//     insert(40, tr);
+//     insert(30, tr);
+//     insert(5, tr);
+//     insert(60, tr);
+//     insert(70, tr);
+//     insert(80, tr);
+//     insert(20, tr);
+//     insert(4, tr);
+//     insert(3, tr);
 
-    printf("DFS Print:\n");
-    dfsprint(tr->root);
+//     printf("DFS Print:\n");
+//     dfsprint(tr->root);
     
-    printf("\nBFS Print:\n");
-    bfsprint(tr->root);
+//     printf("\nBFS Print:\n");
+//     bfsprint(tr->root);
 
-    return 0;
-}
+//     return 0;
+// }

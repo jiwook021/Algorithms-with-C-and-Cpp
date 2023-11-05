@@ -18,11 +18,11 @@ ll get_interval_sum(int now, int now_left, int now_right, int find_left, int fin
 }
 
 void up(ll idx, ll val){
-  ll diff = val - seg_tree[idx];
-  while(idx != 0){
-    seg_tree[idx] += diff;
-    idx = idx >> 1;
-  }
+    ll diff = val - seg_tree[idx];
+    while(idx != 0){
+        seg_tree[idx] += diff;
+        idx = idx >> 1;
+    }
 }
 
 int main(){

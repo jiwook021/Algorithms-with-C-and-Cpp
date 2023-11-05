@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void merge(int arr[], int tmp[],int start, int mid, int end)
 {
     for(int i=start;i<=end;i++)
@@ -37,8 +36,6 @@ void mergesort(int arr[],int tmp[], int start,int end)
         merge(arr,tmp,start,mid,end);
     }
 }
-
-
 
 void Mergesort(int arr[])
 { 
