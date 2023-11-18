@@ -123,6 +123,20 @@ void Delete(list*l,int data)
     }
 }
 
+void reverselist(list* l)
+{
+    node* current = l->head; 
+    node* pNode =NULL; 
+    node* nNode = NULL; 
+    while(current != NULL)
+    {
+        nNode = current->next; //next node setting 
+        current->next = pNode;  //current ->next pNode   
+        pNode = current; 
+        current = nNode; 
+    }   
+    l->head = pNode;
+}
 
 void print(list *l)
 {
@@ -135,7 +149,6 @@ void print(list *l)
      printf("\n");
 }
 
-
 void copylist(list *l,int arr[])
 {
     int i =0;
@@ -146,6 +159,7 @@ void copylist(list *l,int arr[])
         temp = temp->next;
     }
 }
+
 int compare_ints(const void* a, const void* b)
 {
     int arg1 = *(const int*)a;
@@ -154,7 +168,7 @@ int compare_ints(const void* a, const void* b)
     if (arg1 < arg2) return -1;
     if (arg1 > arg2) return 1;
     return 0;
- }
+}
 
 int main()
 {
@@ -170,6 +184,8 @@ int main()
     insert(l,10,1);
     insert(l,40,2);
     
+    print(l);
+    reverselist(l);
     print(l);
     // Delete(l,1);
     // print(l);

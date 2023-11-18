@@ -50,3 +50,61 @@ int main(){
   }
   return 0;
 }
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int segtree [100000];
+
+// void update(int index, int value,int sz)
+// {
+//     int diff = value - segtree[index+sz-1]; 
+//     for(int i = index+sz-1; i!=0; i/=2)
+//     {
+//         segtree[i] += diff;
+//     }
+// }
+
+// int range(int index, int start, int end, int Rangeleft, int RangeRight)
+// {
+//     if(start >RangeRight || end<Rangeleft)
+//         return 0;
+//     if(Rangeleft <= start && RangeRight>=end)
+//         return segtree[index];
+
+//     int mid = (start + end)/2;
+//     return range(index*2, start, mid, Rangeleft,RangeRight) + range(index*2+1, mid+1,end, Rangeleft,RangeRight);
+// }
+
+// void printtree(int sz)
+// {
+//     printf("\n");
+//     for(int i = sz*2-1; i>=1;i--)
+//     {
+//         printf("%d\n",segtree[i]);    
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     int sz =1; 
+//     scanf("%d",&n);
+//     while(n>sz)
+//     {
+//         sz *= 2; 
+//     }
+//     for (int i =0;i<n;i++)
+//     {
+//         scanf("%d", &segtree[sz+i]);
+//     }
+//     //initseg
+//     for(int i = sz-1; i>=1;i--)
+//     {
+//         segtree[i] = segtree[i*2] + segtree[i*2+1];   
+//     }
+//     printtree(sz);
+//     update(4,3,sz);   
+//     printtree(sz);
+//     printf("%d",range(1,1,sz,2,3)); 
+// }
