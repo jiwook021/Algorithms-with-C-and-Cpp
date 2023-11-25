@@ -93,8 +93,6 @@ typedef struct {
     int height;
 } Rectangle;
 
-
-
 // 최소값을 계산하는 함수
 int min(int a, int b) {
     return (a < b) ? a : b;

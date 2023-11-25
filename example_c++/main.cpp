@@ -1,125 +1,49 @@
-// #include <stdio.h>
-// #include <stdlib.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+using namespace std;
+#define INF 99999999
 
-// typedef struct {
-//     int* data;
-//     int size;
-//     int capacity;
-// } PriorityQueue;
+void dijkstra(std::vector<std::vector<int>> graph, int vertex, int edge, int K, int X){
+  int distance[300005];
+  std::priority_queue<pair<int, int>> pq;
+  for(int i = 1;i <= vertex;i++){
+    distance[i] = INF;
+  }
+  distance[X] = 0;
+  pq.push({ 0, X });
+  while(!pq.empty()){
+    int src_dist = -pq.top().first; //그 현재 정점까지 사용한 비용
+    int src = pq.top().second; //정점
+    pq.pop();
 
-// // Utility functions
-// int parent(int i) { return (i - 1) / 2; }
-// int left(int i) { return 2 * i + 1; }
-// int right(int i) { return 2 * i + 2; }
+    if(distance[src] < src_dist) continue;
 
-// void siftUp(PriorityQueue* pq, int i) {
-//     while (i > 0 && pq->data[parent(i)] < pq->data[i]) {
-//         int temp = pq->data[i];
-//         pq->data[i] = pq->data[parent(i)];
-//         pq->data[parent(i)] = temp;
-//         i = parent(i);
-//     }
-// }
-
-// void siftDown(PriorityQueue* pq, int i) {
-//     int maxIndex = i;
-//     int l = left(i);
-//     if (l < pq->size && pq->data[l] > pq->data[maxIndex]) {
-//         maxIndex = l;
-//     }
-//     int r = right(i);
-//     if (r < pq->size && pq->data[r] > pq->data[maxIndex]) {
-//         maxIndex = r;
-//     }
-//     if (i != maxIndex) {
-//         int temp = pq->data[i];
-//         pq->data[i] = pq->data[maxIndex];
-//         pq->data[maxIndex] = temp;
-//         siftDown(pq, maxIndex);
-//     }
-// }
-
-// PriorityQueue* createPriorityQueue(int initialCapacity) {
-//     PriorityQueue* pq = (PriorityQueue*) malloc(sizeof(PriorityQueue));
-//     pq->data = (int*) malloc(initialCapacity * sizeof(int));
-//     pq->size = 0;
-//     pq->capacity = initialCapacity;
-//     return pq;
-// }
-
-// void push(PriorityQueue* pq, int value) {
-//     if (pq->size == pq->capacity) {
-//         pq->capacity *= 2;
-//         pq->data = (int*) realloc(pq->data, pq->capacity * sizeof(int));
-//     }
-//     pq->data[pq->size] = value;
-//     siftUp(pq, pq->size);
-//     pq->size++;
-// }
-
-// int pop(PriorityQueue* pq) {
-//     if (pq->size == 0) {
-//         fprintf(stderr, "Priority queue is empty\n");
-//         exit(EXIT_FAILURE);
-//     }
-//     int result = pq->data[0];
-//     pq->size--;
-//     pq->data[0] = pq->data[pq->size];
-//     siftDown(pq, 0);
-//     return result;
-// }
-
-// int top(PriorityQueue* pq) {
-//     if (pq->size == 0) {
-//         fprintf(stderr, "Priority queue is empty\n");
-//         exit(EXIT_FAILURE);
-//     }
-//     return pq->data[0];
-// }
-
-// int isEmpty(PriorityQueue* pq) {
-//     return pq->size == 0;
-// }
-
-// void freePriorityQueue(PriorityQueue* pq) {
-//     free(pq->data);
-//     free(pq);
-// }
-
-// int main() {
-//     PriorityQueue* pq = createPriorityQueue(4);
-
-//     push(pq, 3);
-//     push(pq, 5);
-//     push(pq, 1);
-//     push(pq, 4);
-
-//     while (!isEmpty(pq)) {
-//         printf("%d ", pop(pq));
-//     }
-
-//     freePriorityQueue(pq);
-
-//     return 0;
-// }
-class ImmutableInt {
-private:
-    const int value;
-
-public:
-    ImmutableInt(int val) : value(val) {}
-
-    ImmutableInt add(int x) const {
-        return ImmutableInt(value + x);
+    for(auto next : graph[src]){
+      if(distance[next] > src_dist + 1){
+        distance[next] = src_dist + 1;
+        pq.push({ -(src_dist + 1), next });
+      }
     }
-
-    int getValue() const {
-        return value;
+  }
+  for(int i = 1; i <= vertex; i++){
+    if(distance[i] == K){
+      cout << i << "\n";
     }
-};
+  }
+}
 
-int main()
-{// 사용 예시
-ImmutableInt obj(10);
-ImmutableInt newObj = obj.add(5);
-}   
+int main(){
+  // N이 2부터 30만임
+  std::vector<std::vector<int>> graph(300005);
+  int N, M, K, X, src, dest;
+  std::cin >> N >> M >> K >> X;
+
+  for(int i = 0;i < M;i++){
+    std::cin >> src >> dest;
+    graph[src].push_back(dest);
+  }
+  dijkstra(graph, N, M, K, X);
+
+  return 0;
+}
